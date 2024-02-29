@@ -16,6 +16,9 @@
         } else {
         // echo $entry;
         $list_handler = fopen(getcwd() . '/' . $list_file, 'a+');
+        $debug_array['get_list_entry.php - position'] = ftell($list_handler);
+        $debug_array['get_list_entry.php - last line'] = fgets($list_handler);
+        $debug_array['get_list_entry.php - last char'] = fgetc($list_handler);
         fwrite($list_handler, "\r\n" . $entry);
         fclose($list_handler);
         }
@@ -26,5 +29,7 @@
     // $list_content = fread($list_handler, filesize($cwd . '/' . $list_file));
     // var_dump($list_content);
     // fclose($list_handler);
-    
+    session_start();
+    $_SESSION['debug_messages'] = $debug_array;
     header('Location: index.php');
+    exit;
