@@ -29,7 +29,14 @@ include 'constants.php';
     <div class="devel-wrapper">
         <div class="devel-inner">
             <div class="log_screen">
-                <?php require_once('./devel_display.php'); ?>
+                <?php require_once('./devel_display.php'); 
+                
+                session_start();
+                if (isset($_SESSION['debug_messages'])) {
+                    echo $_SESSION['debug_messages'];
+                    unset($_SESSION['debug_messages']);//After displaying the message unset it, to make sure that the message is displayed only once.
+                }
+                ?>
             </div>
             <form action="devel.php" method="post">
                 <input type="text" name="devel_input" id="devel_input"/>

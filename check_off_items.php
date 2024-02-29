@@ -1,5 +1,5 @@
 <?php
-include 'devel.php';
+// include 'devel.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get list of checked off items
@@ -9,8 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             array_push($checked_items, $key);
         }
     }
-    echo( "<hr/>" );
-    echo( implode( '|', $checked_items ) );
     // Get list of all items at submit
     $current_list_items = array();
     $list_handler = fopen($cwd . '/' . $list_file, 'r');
@@ -20,12 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // reset handler pointer
     fclose($list_handler);
-    echo( "<hr/>" );
-    echo( implode( '|', $current_list_items ));
     // Calculate remaining items to rewrite to list
     $remaining = array_diff($current_list_items, $checked_items);
-    echo( "<hr/>" );
-    echo( implode( '|', $remaining ));
     $list_handler = fopen($cwd . '/' . $list_file, 'w');
     // Write to list
     foreach ($remaining as $key => $value) {
@@ -33,6 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // Close handler
     fclose($list_handler);
+    $debug_array = array();
+    array_push( $debug_array, [$checked_items, $current_list_items, $remaining]);
 }
 
+session_start();
+$_SESSION['debug_messages'] = $debug_array;
 header('Location: index.php');
+exit;
