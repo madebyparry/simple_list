@@ -22,7 +22,7 @@
             $last_line = $line;
         }
         fseek($list_handler, -2, SEEK_END);
-        if (empty($last_line)) {
+        if (empty($last_line) || substr($last_line, -2) == "\n") {
             fwrite($list_handler, $entry);
         } else {
             fwrite($list_handler, "\r\n" . $entry);
