@@ -9,8 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             array_push($checked_items, $key);
         }
     }
-    print( "</hr>" );
-    print( $checked_items );
+    print render( "<hr/>" );
+    print( implode( '|', $checked_items ) );
     // Get list of all items at submit
     $current_list_items = array();
     $list_handler = fopen($cwd . '/' . $list_file, 'r');
@@ -20,12 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // reset handler pointer
     fclose($list_handler);
-    print( "</hr>" );
-    print( $current_list_items );
+    print render( "<hr/>" );
+    print( implode( '|', $current_list_items ));
     // Calculate remaining items to rewrite to list
     $remaining = array_diff($current_list_items, $checked_items);
-    print( "</hr>" );
-    print( $remaining );
+    echo( "<hr/>" );
+    print( implode( '|', $remaining ));
     $list_handler = fopen($cwd . '/' . $list_file, 'w');
     // Write to list
     foreach ($remaining as $key => $value) {
@@ -35,4 +35,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fclose($list_handler);
 }
 
-// header('Location: index.php');
+header('Location: index.php');
