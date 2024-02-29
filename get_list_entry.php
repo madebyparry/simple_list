@@ -17,12 +17,10 @@
         // echo $entry;
         $list_handler = fopen(getcwd() . '/' . $list_file, 'a+');
         fseek($list_handler, -2, SEEK_END);
-        $debug_array['get_list_entry.php - position'] = ftell($list_handler);
-        $debug_array['get_list_entry.php - last line'] = fgets($list_handler);
-        $debug_array['get_list_entry.php - last char'] = fgetc($list_handler);
         fwrite($list_handler, "\r\n" . $entry);
         fclose($list_handler);
         }
+        $status_message = 'List item added: ' . $entry;
     }
 
     // print list
@@ -31,6 +29,11 @@
     // var_dump($list_content);
     // fclose($list_handler);
     session_start();
-    $_SESSION['debug_messages'] = $debug_array;
+    if (!empty($debug_array)) {
+        $_SESSION['debug_messages'] = $debug_array;
+    }
+    if (!empty($status_message)) {
+        $_SESSION['status_message'] = $status_message;
+    }
     header('Location: index.php');
     exit;

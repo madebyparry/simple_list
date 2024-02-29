@@ -10,6 +10,14 @@ include 'constants.php';
     <title>\\ simple_list web</title>
 </head>
 <body>
+    <?php 
+    session_start();
+    if (isset($_SESSION['status_message'])): ?>
+    <div class="status-message">
+        <?php echo $_SESSION['status_message']; ?>
+        <span class="close" id="close-status-message">X</span>
+    </div>    
+    <?php unset($_SESSION['status_message']); endif; ?>
     <div class="current_list_wrapper">
         <div class="current_list_inner" id="current_list_render">
             <form action="check_off_items.php" method="post">
@@ -29,14 +37,7 @@ include 'constants.php';
     <div class="devel-wrapper">
         <div class="devel-inner">
             <div class="log_screen">
-                <?php require_once('./devel_display.php'); 
-                
-                session_start();
-                if (isset($_SESSION['debug_messages'])) {
-                    print_r($_SESSION['debug_messages']);
-                    unset($_SESSION['debug_messages']);//After displaying the message unset it, to make sure that the message is displayed only once.
-                }
-                ?>
+                <?php require_once('./devel_display.php'); ?>
             </div>
             <form action="devel.php" method="post">
                 <input type="text" name="devel_input" id="devel_input"/>

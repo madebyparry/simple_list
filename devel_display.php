@@ -4,7 +4,7 @@
     // $msg = $devel_messages;
     echo "DEVEL LOG";
     echo "<hr/>";
-    
+
     if (isset($devel_messages)) {
         $counter = 0;
         foreach ($devel_messages as $key => $value) {
@@ -16,6 +16,8 @@
         }
     }
 
- if( $msg!=''):?>
-        <div class="erroroutput"><p><?php echo $msg; ?><br></p></div>
-   <?php endif; ?>
+    session_start();
+    if (isset($_SESSION['debug_messages'])) {
+        print_r($_SESSION['debug_messages']);
+        unset($_SESSION['debug_messages']);
+    }

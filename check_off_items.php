@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // Close handler
     fclose($list_handler);
+    $status_message = 'Items successfully removed from Item List';
     $debug_array = array();
     $debug_array['checked'] = $checked_items;
     $debug_array['current'] = $current_list_items;
@@ -39,6 +40,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 session_start();
-$_SESSION['debug_messages'] = $debug_array;
+if (!empty($debug_array)) {
+    $_SESSION['debug_messages'] = $debug_array;
+}
+if (!empty($status_message)) {
+    $_SESSION['status_message'] = $status_message;
+}
 header('Location: index.php');
 exit;
