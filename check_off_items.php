@@ -12,14 +12,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // Get list of all items at submit
     $current_list_items = array();
-    $current_list_items = explode("\n", file_get_contents($list_file));
-    // $list_handler = fopen($cwd . '/' . $list_file, 'r');
-    // // reset handler pointer
-    // while(!feof($list_handler)) {
-    //     $current_list_items[] = fgets($list_handler);
-    // }
-    // // reset handler pointer
-    // fclose($list_handler);
+    $list_handler = fopen($cwd . '/' . $list_file, 'r');
+    // reset handler pointer
+    while(!feof($list_handler)) {
+        $current_list_items[] = fgets($list_handler);
+    }
+    // reset handler pointer
+    fclose($list_handler);
     // Calculate remaining items to rewrite to list
     $remaining = array_diff($current_list_items, $checked_items);
     $list_handler = fopen($cwd . '/' . $list_file, 'w');
