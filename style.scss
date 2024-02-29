@@ -52,6 +52,10 @@ body {
         justify-content: space-between;
         .form-item {
             flex: 1;
+            input[type="text"],
+            input[type="submit"] {
+                width: 100%;
+            }
         }
         .form-input {
             flex: 3;

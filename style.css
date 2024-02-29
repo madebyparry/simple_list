@@ -37,6 +37,9 @@ body {
     justify-content: space-between; }
     .devel-wrapper .devel-form .form-item {
       flex: 1; }
+      .devel-wrapper .devel-form .form-item input[type="text"],
+      .devel-wrapper .devel-form .form-item input[type="submit"] {
+        width: 100%; }
     .devel-wrapper .devel-form .form-input {
       flex: 3; }
 
