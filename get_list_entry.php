@@ -16,7 +16,7 @@
         } else {
         // echo $entry;
         $list_handler = fopen(getcwd() . '/' . $list_file, 'a+');
-        fseek($list_handler, -1, SEEK_END);
+        fseek($list_handler, -2, SEEK_END);
         $debug_array['get_list_entry.php - position'] = ftell($list_handler);
         $debug_array['get_list_entry.php - last line'] = fgets($list_handler);
         $debug_array['get_list_entry.php - last char'] = fgetc($list_handler);
