@@ -28,7 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Close handler
     fclose($list_handler);
     $debug_array = array();
-    array_push( $debug_array, [$checked_items, $current_list_items, $remaining]);
+    array_push( $debug_array, $checked_items);
+    array_push( $debug_array, $current_list_items, $remaining);
+    array_push( $debug_array, $remaining);
+
 }
 
 session_start();

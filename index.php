@@ -34,7 +34,8 @@ include 'constants.php';
                 session_start();
                 if (isset($_SESSION['debug_messages'])) {
                     $dbm = implode(" | ", $_SESSION['debug_messages']);
-                    print_r($dbm);
+                    print_r($_SESSION['debug_messages']);
+                    echo $dbm;
                     unset($_SESSION['debug_messages']);//After displaying the message unset it, to make sure that the message is displayed only once.
                 }
                 ?>
