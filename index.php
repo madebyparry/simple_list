@@ -14,7 +14,9 @@ include 'constants.php';
     session_start();
     if (isset($_SESSION['status_message'])): ?>
     <div class="status-message">
-        <?php echo $_SESSION['status_message']; ?>
+        <span class="status-inner">
+            <?php echo $_SESSION['status_message']; ?>
+        </span>
         <span class="close" id="close-status-message">X</span>
     </div>    
     <?php unset($_SESSION['status_message']); endif; ?>
@@ -39,11 +41,17 @@ include 'constants.php';
             <div class="log_screen">
                 <?php require_once('./devel_display.php'); ?>
             </div>
-            <form action="devel.php" method="post">
-                <input type="text" name="devel_input" id="devel_input"/>
-                <input type="checkbox" name="clear_cache_check" id="clear_cache_check"/>
-                <label for="clear_cache_check">Clear caches?</label>
-                <input type="submit" value="send" name="devel_submit">
+            <form action="devel.php" method="post" class="devel-form">
+                <div class="form-item form-input">
+                    <input type="text" name="devel_input" id="devel_input"/>
+                </div>
+                <div class="form-item form-checkbox">
+                    <input type="checkbox" name="clear_cache_check" id="clear_cache_check"/>
+                    <label for="clear_cache_check">Clear caches?</label>
+                </div>
+                <div class="form-item form-submit">
+                    <input type="submit" value="send" name="devel_submit">
+                </div>
             </form>
         </div>
     </div>

@@ -32,5 +32,21 @@ body {
     border: 1px solid #dadada;
     padding: 20px;
     font-family: monospace; }
+  .devel-wrapper .devel-form {
+    display: flex;
+    justify-content: space-between; }
+    .devel-wrapper .devel-form .form-item {
+      flex: 1; }
+    .devel-wrapper .devel-form .form-input {
+      flex: 3; }
+
+.status-message {
+  margin: 0px 20px;
+  padding: 20px;
+  background-color: lightgreen;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
 
 /*# sourceMappingURL=style.css.map */
