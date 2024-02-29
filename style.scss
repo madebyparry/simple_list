@@ -1,0 +1,39 @@
+$color_primary: #dadada;
+$color_secondary: #fafafa;
+
+body {
+    margin: 0px;
+    background-color: $color_secondary;
+}
+
+.current_list_wrapper {
+    .current_list_inner {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid $color_primary;
+        background-color: #fff;
+        .checked {
+            text-decoration: line-through;
+        }
+    }
+}
+
+.list_entry_wrapper {
+    .list_entry_inner {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid $color_primary;
+        background-color: #fff;
+        form {
+            display: flex;
+        }
+        .new_entry_input {
+            flex: 3;
+        }
+        .new_entry_submit {
+            flex: 1;
+            height: 30px;
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+body {
+  margin: 0px;
+  background-color: #fafafa; }
+
+.current_list_wrapper .current_list_inner {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #dadada;
+  background-color: #fff; }
+  .current_list_wrapper .current_list_inner .checked {
+    text-decoration: line-through; }
+
+.list_entry_wrapper .list_entry_inner {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #dadada;
+  background-color: #fff; }
+  .list_entry_wrapper .list_entry_inner form {
+    display: flex; }
+  .list_entry_wrapper .list_entry_inner .new_entry_input {
+    flex: 3; }
+  .list_entry_wrapper .list_entry_inner .new_entry_submit {
+    flex: 1;
+    height: 30px; }
+
+/*# sourceMappingURL=style.css.map */
