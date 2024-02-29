@@ -25,7 +25,7 @@
         if ($last_line == "" || substr($last_line, -2) == "\n") {
             fwrite($list_handler, $entry);
         } else {
-            fwrite($list_handler, "\r\n" . $entry);
+            fwrite($list_handler, "\n" . $entry);
         }
         fclose($list_handler);
         }
