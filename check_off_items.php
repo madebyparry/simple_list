@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $list_handler = fopen($cwd . '/' . $list_file, 'r');
     // reset handler pointer
     while(!feof($list_handler)) {
-        array_push($current_list_items, fgets($list_handler));
+        $current_list_items[] = fgets($list_handler);
     }
     // reset handler pointer
     fclose($list_handler);
