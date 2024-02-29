@@ -37,3 +37,14 @@ body {
     }
 }
 
+.devel-wrapper {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid $color_primary;
+    background-color: #fff;
+    .log_screen {
+        border: 1px solid $color_primary;
+        padding: 20px;
+        font-family: monospace;
+    }    
+}
