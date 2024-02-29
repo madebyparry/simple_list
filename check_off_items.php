@@ -1,6 +1,6 @@
 <?php
 // include 'devel.php';
-// include 'constants.php';
+include 'constants.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get list of checked off items
