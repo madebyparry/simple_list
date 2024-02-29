@@ -34,9 +34,11 @@ body {
     font-family: monospace; }
   .devel-wrapper .devel-form {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 20px; }
     .devel-wrapper .devel-form .form-item {
-      flex: 1; }
+      flex: 1;
+      display: flex; }
       .devel-wrapper .devel-form .form-item input[type="text"],
       .devel-wrapper .devel-form .form-item input[type="submit"] {
         width: 100%; }
