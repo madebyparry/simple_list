@@ -13,3 +13,7 @@
             $counter++;
         }
     }
+
+ if( $msg!=''):?>
+        <div class="erroroutput"><p><?php echo $msg; ?><br></p></div>
+   <?php endif; ?>

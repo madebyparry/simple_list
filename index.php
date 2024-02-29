@@ -30,9 +30,6 @@ include 'constants.php';
         <div class="devel-inner">
             <div class="log_screen">
                 <?php require_once('./devel_display.php'); ?>
-                <?php if( $msg!=''):?>
-                     <div class="erroroutput"><p><?php echo $msg; ?><br></p></div>
-                <?php endif; ?>
             </div>
             <form action="devel.php" method="post">
                 <input type="text" name="devel_input" id="devel_input"/>
