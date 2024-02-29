@@ -14,17 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $list_handler = fopen($cwd . '/' . $list_file, 'r');
     // reset handler pointer
     while(!feof($list_handler)) {
-        $current_list_items[] = fgets($list_handler);
+        array_push($current_list_items, fgets($list_handler));
     }
-    // while (($line = fgets($list_handler)) !== false) {
-    //     $current_list_items[] = $line;
-    // }
     // reset handler pointer
     fclose($list_handler);
-    $list_handler = fopen($cwd . '/' . $list_file, 'w');
-    // rewind($list_handler);
     // Calculate remaining items to rewrite to list
     $remaining = array_diff($current_list_items, $checked_items);
+    $list_handler = fopen($cwd . '/' . $list_file, 'w');
     // Write to list
     foreach ($remaining as $key => $value) {
         fwrite($list_handler, $value);
