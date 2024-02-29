@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     while(!feof($list_handler)) {
         $line = fgets($list_handler);
         if ($line != '') {
-            $current_list_items[] = fgets($list_handler);
+            $current_list_items[] = $line;
         }
     }
     // reset handler pointer
