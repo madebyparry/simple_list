@@ -16,8 +16,17 @@
         } else {
         // echo $entry;
         $list_handler = fopen(getcwd() . '/' . $list_file, 'a+');
+        reset($list_handler);
+        $last_line = '';
+        while ($line = fgets( $list_handler )) {
+            $last_line = $line;
+        }
         fseek($list_handler, -2, SEEK_END);
-        fwrite($list_handler, "\r\n" . $entry);
+        if (empty($last_line)) {
+            fwrite($list_handler, $entry);
+        } else {
+            fwrite($list_handler, "\r\n" . $entry);
+        }
         fclose($list_handler);
         }
         $status_message = 'List item added: ' . $entry;
