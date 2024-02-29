@@ -50,8 +50,10 @@ body {
     .devel-form {
         display: flex;
         justify-content: space-between;
+        margin-top: 20px;
         .form-item {
             flex: 1;
+            display:flex;
             input[type="text"],
             input[type="submit"] {
                 width: 100%;
