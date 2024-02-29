@@ -3,6 +3,8 @@
     // global $devel_messages;
     // $msg = $devel_messages;
     echo "DEVEL LOG";
+    echo "<hr/>";
+    
     if (isset($devel_messages)) {
         $counter = 0;
         foreach ($devel_messages as $key => $value) {
