@@ -24,12 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fclose($list_handler);
     // Calculate remaining items to rewrite to list
     $remaining = array_diff($current_list_items, $checked_items);
+    $remaining = array_map('trim', $remaining);
     $list_handler = fopen($cwd . '/' . $list_file, 'w');
     // Write to list
     foreach ($remaining as $key => $value) {
-        if ($value != '') {
-            fwrite($list_handler, $value);
-        }
+        fwrite($list_handler, $value);
     }
     // Close handler
     fclose($list_handler);
