@@ -35,4 +35,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fclose($list_handler);
 }
 
-header('Location: index.php');
+// header('Location: index.php');
