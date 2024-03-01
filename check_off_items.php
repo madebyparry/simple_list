@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $list_handler = fopen($cwd . '/' . $list_file, 'w');
     // Write to list
     foreach ($remaining as $key => $value) {
-        fwrite($list_handler, trim(str_replace("_", " ", $value)));
+        fwrite($list_handler, trim(str_replace("_", " ", $value))."\n");
     }
     // Close handler
     fclose($list_handler);
