@@ -7,13 +7,14 @@
     --text-color-accent: #FFF;
     --text-color-emphasis: gold;
 }
-$color_primary: --site-color-primary;
-$color_secondary: --site-color-secondary;
-$color_accent: --site-color-accent;
-$text_color_primary: --text-color-primary;
-$text_color_secondary: --text-color-secondary;
-$text_color_accent: --text-color-accent;
-$text_color_emphasis: --text-color-emphasis; 
+
+$color_primary: var(--site-color-primary);
+$color_secondary: var(--site-color-secondary);
+$color_accent: var(--site-color-accent);
+$text_color_primary: var(--text-color-primary);
+$text_color_secondary: var(--text-color-secondary);
+$text_color_accent: var(--text-color-accent);
+$text_color_emphasis: var(--text-color-emphasis); 
 
 
 body {
