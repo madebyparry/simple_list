@@ -53,7 +53,8 @@ input[type="text"] {
   background-color: var(--site-color-primary-dark);
   color: var(--text-color-primary);
   font-family: "Silkscreen Regular";
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  border-bottom-color: var(--text-color-accent); }
   input[type="text"]:focus {
     outline: none;
     border-color: var(--text-color-emphasis); }
@@ -110,6 +111,8 @@ button.form-button {
     .site-header h1 > a .site-logo {
       letter-spacing: -14px;
       margin-right: 15px; }
+      .site-header h1 > a .site-logo:hover {
+        color: var(--text-color-primary); }
   .site-header .header-menu-button {
     display: flex;
     color: var(--text-color-emphasis);
