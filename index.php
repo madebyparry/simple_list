@@ -17,10 +17,10 @@ $devel_enable = FALSE;
     session_start();
     if (isset($_SESSION['status_message'])): ?>
     <div class="status-message">
-        <span class="status-inner">
+        <span class="status-inner" id="status-message">
             <?php echo $_SESSION['status_message']; ?>
         </span>
-        <span class="close" id="close-status-message">X</span>
+        <span class="close" id="close-status-message"><?php include("./assets/icons/simple_list_close.svg");?></span>
     </div>    
     <?php unset($_SESSION['status_message']); endif; ?>
     <div class="current_list_wrapper section-wrapper">
@@ -30,7 +30,7 @@ $devel_enable = FALSE;
                     <?php require_once('./display_list.php'); ?>
                 </div>
                 <button type="submit" value="Clear checked items" class="form-button">
-                    <span class="button-symbol"><?php include_once("./assets/icons/simple_list_close.svg");?></span>
+                    <span class="button-symbol"><?php include("./assets/icons/simple_list_close.svg");?></span>
                     <span class="button-text">Clear Checked Items</span>
                 </button>
             </form>

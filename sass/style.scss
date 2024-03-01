@@ -62,6 +62,9 @@ svg {
     // border: 1px solid $color_accent;
     background-color: $color_secondary;
 }
+.hidden {
+    display: none !important;
+}
 a {
     color: $text_color_emphasis;
     color: $text_color_accent;
@@ -270,7 +273,13 @@ nav.site-nav {
     color: $text_color_success;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    font-family: $font_primary;
+    border-radius: 0px 0px 5px 5px;
+    .emphasis {
+        color: $text_color_primary;
+    }
+    // .close {
+    // }
 }
 
 @import 'responsive';

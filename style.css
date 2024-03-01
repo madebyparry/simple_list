@@ -40,6 +40,9 @@ svg {
   border-radius: 5px;
   background-color: var(--site-color-secondary); }
 
+.hidden {
+  display: none !important; }
+
 a {
   color: var(--text-color-emphasis);
   color: var(--text-color-accent); }
@@ -197,6 +200,9 @@ nav.site-nav {
   color: var(--site-color-primary);
   display: flex;
   justify-content: space-between;
-  align-content: center; }
+  font-family: "Silkscreen Regular";
+  border-radius: 0px 0px 5px 5px; }
+  .status-message .emphasis {
+    color: var(--text-color-primary); }
 
 /*# sourceMappingURL=style.css.map */
