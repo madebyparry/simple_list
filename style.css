@@ -1,6 +1,7 @@
 body {
   margin: 0px;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  color: #111; }
 
 .current_list_wrapper .current_list_inner {
   margin: 20px;
