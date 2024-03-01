@@ -27,7 +27,7 @@ body {
   background-color: var(--site-color-primary);
   border-color: var(--text-color-secondary);
   color: var(--text-color-secondary);
-  font-family: "Cotham Sans", Helvetica, sans-serif; }
+  font-family: "Silkscreen Regular"; }
 
 svg {
   width: 25px; }
