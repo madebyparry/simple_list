@@ -1,21 +1,21 @@
 body {
   margin: 0px;
-  background-color: #fafafa;
-  color: #111; }
+  background-color: #222;
+  color: #DDD; }
 
 .current_list_wrapper .current_list_inner {
   margin: 20px;
   padding: 20px;
-  border: 1px solid #dadada;
-  background-color: #fff; }
+  border: 1px solid #444;
+  background-color: #333; }
   .current_list_wrapper .current_list_inner .checked {
     text-decoration: line-through; }
 
 .list_entry_wrapper .list_entry_inner {
   margin: 20px;
   padding: 20px;
-  border: 1px solid #dadada;
-  background-color: #fff; }
+  border: 1px solid #444;
+  background-color: #333; }
   .list_entry_wrapper .list_entry_inner form {
     display: flex; }
   .list_entry_wrapper .list_entry_inner .new_entry_input {
@@ -27,10 +27,10 @@ body {
 .devel-wrapper {
   margin: 20px;
   padding: 20px;
-  border: 1px solid #dadada;
-  background-color: #fff; }
+  border: 1px solid #444;
+  background-color: #333; }
   .devel-wrapper .log_screen {
-    border: 1px solid #dadada;
+    border: 1px solid #444;
     padding: 20px;
     font-family: monospace; }
   .devel-wrapper .devel-form {
