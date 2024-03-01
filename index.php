@@ -25,7 +25,9 @@ $devel_enable = TRUE;
     <div class="current_list_wrapper">
         <div class="current_list_inner" id="current_list_render">
             <form action="check_off_items.php" method="post">
-                <?php require_once('./display_list.php'); ?>
+                <div class="current-list-items">
+                    <?php require_once('./display_list.php'); ?>
+                </div>
                 <input type="submit" value="save list">
             </form>
         </div>

@@ -35,6 +35,7 @@ body {
     justify-content: space-between;
     h1 > a {
         font-family: $font_display;
+        text-decoration: none;
     }
     .header-menu-button {
         padding: 10px;
@@ -75,8 +76,13 @@ input[type="submit"] {
         border: 1px solid $color_accent;
         background-color: $color_secondary;
         font-family: $font_primary;
-        .checked {
-            text-decoration: line-through;
+        .current_list_items {
+            background-color: #EEE;
+            color: #333;
+            padding: 10px 20px;
+            .checked {
+                text-decoration: line-through;
+            }    
         }
     }
 }
