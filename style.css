@@ -19,8 +19,8 @@
   --text-color-secondary: #EEE;
   --text-color-accent: #d58a6d;
   --text-color-emphasis: #f0501f;
-  --site-color-success: #628c62;
-  --text-color-success: #123112; }
+  --site-color-success: #939aaa;
+  --text-color-success: #151231; }
 
 body {
   margin: 0px;
@@ -204,5 +204,8 @@ nav.site-nav {
   border-radius: 0px 0px 5px 5px; }
   .status-message .emphasis {
     color: var(--text-color-primary); }
+  .status-message .close:hover {
+    color: var(--text-color-primary);
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

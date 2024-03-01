@@ -20,7 +20,7 @@ $devel_enable = FALSE;
         <span class="status-inner" id="status-message">
             <?php echo $_SESSION['status_message']; ?>
         </span>
-        <span class="close" id="close-status-message" onclick="close_status()"><?php include("./assets/icons/simple_list_close.svg");?></span>
+        <span class="close" id="close-status-message" onclick="close_status"><?php include("./assets/icons/simple_list_close.svg");?></span>
     </div>    
     <?php unset($_SESSION['status_message']); endif; ?>
     <div class="current_list_wrapper section-wrapper">

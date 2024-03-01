@@ -17,8 +17,8 @@
     --text-color-accent: #d58a6d;
     --text-color-emphasis: #f0501f;
     
-    --site-color-success: #628c62;
-    --text-color-success: #123112;
+    --site-color-success: #939aaa;
+    --text-color-success: #151231;
 }
 
 $color_primary: var(--site-color-primary);
@@ -278,8 +278,10 @@ nav.site-nav {
     .emphasis {
         color: $text_color_primary;
     }
-    // .close {
-    // }
+    .close:hover {
+        color: $text_color_primary;
+        cursor: pointer;
+    }
 }
 
 @import 'responsive';
