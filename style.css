@@ -17,7 +17,9 @@
   --text-color-primary: #EEE;
   --text-color-secondary: #DDD;
   --text-color-accent: #FFF;
-  --text-color-emphasis: #f9c320; }
+  --text-color-emphasis: #f9c320;
+  --site-color-success: #4e7c4e;
+  --text-color-success: #123112; }
 
 body {
   margin: 0px;

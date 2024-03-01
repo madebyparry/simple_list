@@ -15,6 +15,10 @@
     --text-color-secondary: #DDD;
     --text-color-accent: #FFF;
     --text-color-emphasis: #f9c320;
+
+
+    --site-color-success: #4e7c4e;
+    --text-color-success: #123112;
 }
 
 $color_primary: var(--site-color-primary);
@@ -25,6 +29,8 @@ $text_color_secondary: var(--text-color-secondary);
 $text_color_accent: var(--text-color-accent);
 $text_color_emphasis: var(--text-color-emphasis); 
 
+$color_success: var(--site-color-success);
+$text_color_success: var(--text-color-success);
 
 body {
     margin: 0px;
