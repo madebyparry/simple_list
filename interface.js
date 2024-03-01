@@ -30,6 +30,7 @@ function toggle_menu() {
 }
 
 function close_status() {
+    console.log('status toggled');
     stat = document.getElementById('status-message');
     stat.classList.add('hidden');
 }
