@@ -65,7 +65,7 @@ input {
     border: none;
 }
 input[type="text"] {
-    background-color: $color_primary;
+    background-color: $color_primary_dark;
     color: $text_color_primary;
     font-family: $font_primary;
     border: 2px solid transparent;
@@ -80,15 +80,19 @@ button.form-button {
     color: $text_color_accent;
     padding: 5px 10px;
     cursor: pointer;
-    text-transform: capitalize;
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     border-radius: 3px;
     &:hover {
-        color: $color_primary;
-        background-color: $text_color_emphasis;
+        color: $color_primary-dark;
+        background-color: $text_color_accent;
+    }
+    > .button-symbol {
+        letter-spacing: -7px;
+        font-family: $font_primary_bold;
     }
     > i {
         margin-right: 10px;
@@ -161,7 +165,7 @@ nav.site-nav {
 .current_list_wrapper {
     .current_list_inner {
         .current_list_items {
-            background-color: $color_primary;
+            background-color: $color_primary_dark;
             color: $text_color_primary;
             font-family: $font_primary;
             border-radius: 3px;

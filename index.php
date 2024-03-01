@@ -30,7 +30,7 @@ $devel_enable = TRUE;
                     <?php require_once('./display_list.php'); ?>
                 </div>
                 <button type="submit" value="Clear checked items" class="form-button">
-                    <i class="iconoir-erase-solid"></i>
+                    <span class="button-symbol">XX</span>
                     Clear Checked Items
                 </button>
             </form>
@@ -41,7 +41,7 @@ $devel_enable = TRUE;
             <form action="get_list_entry.php" method="post">
                 <input type="text" name="new_list_entry" class="new_entry_input">
                 <button type="submit" value="submit" class="new_entry_submit form-button">
-                    <i class="iconoir-upload-square-solid"></i>
+                    <span class="button-symbol">^^</span>
                     Submit
                 </button>
             </form>

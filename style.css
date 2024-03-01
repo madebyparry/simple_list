@@ -44,7 +44,7 @@ input {
   border: none; }
 
 input[type="text"] {
-  background-color: var(--site-color-primary);
+  background-color: var(--site-color-primary-dark);
   color: var(--text-color-primary);
   font-family: "Silkscreen Regular";
   border: 2px solid transparent; }
@@ -58,7 +58,7 @@ button.form-button {
   color: var(--text-color-accent);
   padding: 5px 10px;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,8 +66,12 @@ button.form-button {
   border-radius: 3px; }
   input[type="submit"]:hover,
   button.form-button:hover {
-    color: var(--site-color-primary);
-    background-color: var(--text-color-emphasis); }
+    color: var(--site-color-primary-dark);
+    background-color: var(--text-color-accent); }
+  input[type="submit"] > .button-symbol,
+  button.form-button > .button-symbol {
+    letter-spacing: -7px;
+    font-family: "Silkscreen Bold"; }
   input[type="submit"] > i,
   button.form-button > i {
     margin-right: 10px; }
@@ -117,7 +121,7 @@ nav.site-nav {
   display: block; }
 
 .current_list_wrapper .current_list_inner .current_list_items {
-  background-color: var(--site-color-primary);
+  background-color: var(--site-color-primary-dark);
   color: var(--text-color-primary);
   font-family: "Silkscreen Regular";
   border-radius: 3px; }
