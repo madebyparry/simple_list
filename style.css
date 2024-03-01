@@ -1,141 +1,69 @@
-@font-face {
-  font-family: "Silkscreen Regular";
-  src: local("Silkscreen Regular"), url("./assets/fonts/Silkscreen-Regular.ttf") format("truetype"); }
-@font-face {
-  font-family: "Silkscreen Bold";
-  src: local("Silkscreen Regular"), url("./assets/fonts/Silkscreen-Bold.ttf") format("truetype"); }
-@font-face {
-  font-family: "Sixtyfour";
-  src: local("Silkscreen"), url("./assets/fonts/Sixtyfour-Regular.ttf") format("truetype"); }
-@font-face {
-  font-family: "Cotham Sans";
-  src: local("Cotham Sans"), url("./assets/fonts/CothamSans.otf") format("opentype"); }
-:root {
-  --site-color-primary: #282828;
-  --site-color-secondary: #f0be92;
-  --site-color-accent: #333;
-  --text-color-primary: #EEE;
-  --text-color-secondary: #DDD;
-  --text-color-accent: #FFF;
-  --text-color-emphasis: #df4d14;
-  --site-color-success: #4e7c4e;
-  --text-color-success: #123112; }
+/*
+Error: Keyword argument "$color" passed more than once
+        on line 87 of sass/style.scss
 
-body {
-  margin: 0px;
-  background-color: var(--site-color-primary);
-  border-color: var(--text-color-secondary);
-  color: var(--text-color-secondary);
-  font-family: "Cotham Sans", Helvetica, sans-serif;
-  background-image: linear-gradient(77deg, #444, #555); }
+82:     background-color: $color_primary;
+83:     color: $text_color_secondary;
+84:     border: none;
+85: }
+86: input[type="text"] {
+87:     background-color: mix($color: #fff, $color: $color_secondary, $weight: 0.5);
+88:     color: #333;
+89:     font-family: $font_primary;
+90: }
+91: input[type="submit"] {
+92:     background-color: $color_primary;
 
-.site-header {
-  padding: 20px;
-  background-color: var(--site-color-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  .site-header h1 > a {
-    font-family: "Silkscreen Bold";
-    text-decoration: none; }
-  .site-header .header-menu-button {
-    padding: 10px;
-    background-color: var(--site-color-primary);
-    color: var(--text-color-emphasis); }
-    .site-header .header-menu-button:hover {
-      background-color: var(--text-color-emphasis);
-      color: var(--site-color-primary); }
-
-nav.site-nav {
-  display: none;
-  position: relative;
-  padding: 10px 20px;
-  background-color: var(--site-color-secondary); }
-  nav.site-nav ul {
-    display: flex;
-    padding: 0px;
-    justify-content: space-between;
-    list-style-type: none; }
-
-#site-nav.reveal {
-  display: block; }
-
-a {
-  color: var(--text-color-emphasis); }
-
-input {
-  background-color: var(--site-color-primary);
-  color: var(--text-color-secondary);
-  border: none; }
-
-input[type="text"] {
-  background-color: #EEE;
-  color: #333;
-  font-family: "Silkscreen Regular"; }
-
-input[type="submit"] {
-  background-color: var(--site-color-primary);
-  color: var(--text-color-emphasis); }
-
-.current_list_wrapper .current_list_inner {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid var(--site-color-accent);
-  background-color: var(--site-color-secondary);
-  font-family: "Silkscreen Regular"; }
-  .current_list_wrapper .current_list_inner .current_list_items {
-    background-color: #EEE;
-    color: #333;
-    padding: 10px 20px; }
-    .current_list_wrapper .current_list_inner .current_list_items .checked {
-      text-decoration: line-through; }
-  .current_list_wrapper .current_list_inner input[type="submit"] {
-    margin-top: 10px;
-    min-width: 220px; }
-
-.list_entry_wrapper .list_entry_inner {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid var(--site-color-accent);
-  background-color: var(--site-color-secondary); }
-  .list_entry_wrapper .list_entry_inner form {
-    display: flex; }
-  .list_entry_wrapper .list_entry_inner .new_entry_input {
-    flex: 3; }
-  .list_entry_wrapper .list_entry_inner .new_entry_submit {
-    flex: 1;
-    height: 30px; }
-
-.devel-wrapper {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid var(--site-color-accent);
-  background-color: var(--site-color-secondary); }
-  .devel-wrapper .log_screen {
-    border: 1px solid var(--site-color-accent);
-    padding: 20px;
-    font-family: monospace; }
-  .devel-wrapper .devel-form {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px; }
-    .devel-wrapper .devel-form .form-item {
-      flex: 1;
-      display: flex; }
-      .devel-wrapper .devel-form .form-item input[type="text"],
-      .devel-wrapper .devel-form .form-item input[type="submit"] {
-        width: 100%; }
-    .devel-wrapper .devel-form .form-input {
-      flex: 3; }
-
-.status-message {
-  margin: 0px 20px;
-  padding: 20px;
-  background-color: var(--site-color-success);
-  border: 1px solid var(--text-color-success);
-  color: var(--text-color-success);
-  display: flex;
-  justify-content: space-between;
-  align-content: center; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+sass/style.scss:87
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:703:in `block in arglist'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:904:in `without_stop_at'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:691:in `arglist'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:683:in `fn_arglist'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:643:in `funcall'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:531:in `css_min_max'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:507:in `ident'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_not'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_div'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_minus'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_plus'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `times_div_or_mod'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `plus_or_minus'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `relational'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `eq_or_neq'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `and_expr'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `or_expr'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:481:in `space'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:422:in `interpolation'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:343:in `expr'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:853:in `assert_expr'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1164:in `sass_script'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1002:in `value!'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:807:in `block in try_declaration'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:383:in `run'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/bin/sass:8:in `<top (required)>'
+/usr/bin/sass:25:in `load'
+/usr/bin/sass:25:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Keyword argument \"$color\" passed more than once\A         on line 87 of sass/style.scss\A \A 82:     background-color: $color_primary;\A 83:     color: $text_color_secondary;\A 84:     border: none;\A 85: }\A 86: input[type=\"text\"] {\A 87:     background-color: mix($color: #fff, $color: $color_secondary, $weight: 0.5);\A 88:     color: #333;\A 89:     font-family: $font_primary;\A 90: }\A 91: input[type=\"submit\"] {\A 92:     background-color: $color_primary;"; }

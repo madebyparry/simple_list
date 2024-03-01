@@ -11,9 +11,9 @@
     --site-color-primary: #282828;
     --site-color-secondary: #f0be92;
     --site-color-accent: #333;
-    --text-color-primary: #EEE;
-    --text-color-secondary: #DDD;
-    --text-color-accent: #FFF;
+    --text-color-primary: #333;
+    --text-color-secondary: #444;
+    --text-color-accent: #df4d14;
     --text-color-emphasis: #df4d14;
 
     --site-color-success: #4e7c4e;
@@ -84,13 +84,18 @@ input {
     border: none;
 }
 input[type="text"] {
-    background-color: #EEE;
+    background-color: mix($color: #fff, $color: $color_secondary, $weight: 0.5);
     color: #333;
     font-family: $font_primary;
 }
 input[type="submit"] {
     background-color: $color_primary;
-    color: $text_color_emphasis;
+    color: $color_secondary;
+    padding: 5px 10px;
+    &:hover {
+        color: $color_primary;
+        background-color: $color_secondary;
+    }
 }
 .current_list_wrapper {
     .current_list_inner {
@@ -100,8 +105,8 @@ input[type="submit"] {
         background-color: $color_secondary;
         font-family: $font_primary;
         .current_list_items {
-            background-color: #EEE;
-            color: #333;
+            // background-color: #EEE;
+            // color: #333;
             padding: 10px 20px;
             .checked {
                 text-decoration: line-through;
