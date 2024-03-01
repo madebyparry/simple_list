@@ -31,7 +31,7 @@ $devel_enable = FALSE;
                 </div>
                 <button type="submit" value="Clear checked items" class="form-button">
                     <span class="button-symbol"><?php include_once("./assets/icons/simple_list_close.svg");?></span>
-                    Clear Checked Items
+                    <span class="button-text">Clear Checked Items</span>
                 </button>
             </form>
         </div>
@@ -42,7 +42,7 @@ $devel_enable = FALSE;
                 <input type="text" name="new_list_entry" class="new_entry_input">
                 <button type="submit" value="submit" class="new_entry_submit form-button">
                     <span class="button-symbol"><?php include_once("./assets/icons/simple_list_submit.svg"); ?></span>
-                    Submit
+                    <span class="button-text">Submit</span>
                 </button>
             </form>
         </div>

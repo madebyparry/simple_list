@@ -75,6 +75,9 @@ button.form-button {
   button.form-button:hover {
     color: var(--site-color-primary-dark);
     background-color: var(--text-color-emphasis); }
+  input[type="submit"] > .button-text,
+  button.form-button > .button-text {
+    margin-bottom: 4px; }
   input[type="submit"] > .button-symbol,
   button.form-button > .button-symbol {
     letter-spacing: -7px;
@@ -186,9 +189,9 @@ nav.site-nav {
 .status-message {
   margin: 0px 20px;
   padding: 20px;
-  background-color: var(--site-color-success);
-  border: 1px solid var(--text-color-success);
-  color: var(--text-color-success);
+  background-color: var(--text-color-accent);
+  border: 1px solid var(--site-color-primary);
+  color: var(--site-color-primary);
   display: flex;
   justify-content: space-between;
   align-content: center; }

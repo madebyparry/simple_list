@@ -30,8 +30,8 @@ $text_color_secondary: var(--text-color-secondary);
 $text_color_accent: var(--text-color-accent);
 $text_color_emphasis: var(--text-color-emphasis); 
 
-$color_success: var(--site-color-success);
-$text_color_success: var(--text-color-success);
+$color_success: var(--text-color-accent);
+$text_color_success: var(--site-color-primary);
 
 // --------------------------------------------------
 //
@@ -97,6 +97,9 @@ button.form-button {
     &:hover {
         color: $color_primary-dark;
         background-color: $text_color_emphasis;
+    }
+    > .button-text {
+        margin-bottom: 4px;
     }
     > .button-symbol {
         letter-spacing: -7px;
