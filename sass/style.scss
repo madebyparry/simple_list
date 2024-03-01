@@ -74,6 +74,7 @@ nav.site-nav {
     position: relative;
     padding: 10px 20px;
     background-color: $color_secondary;
+    border-bottom: 1px solid $color_accent;
     ul {
         display: flex;
         padding: 0px;
@@ -96,10 +97,10 @@ input[type="text"] {
     background-color: #f2ebe9;
     color: $color_primary;
     font-family: $font_primary;
-    border: 1px solid $color_primary;
+    border: 2px solid transparent;
     &:focus {
         outline: none;
-        border: 1px solid $text_color_emphasis;
+        border-color: $text_color_emphasis;
     }
 }
 input[type="submit"],

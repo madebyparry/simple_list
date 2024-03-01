@@ -57,7 +57,8 @@ nav.site-nav {
   display: none;
   position: relative;
   padding: 10px 20px;
-  background-color: var(--site-color-secondary); }
+  background-color: var(--site-color-secondary);
+  border-bottom: 1px solid var(--site-color-accent); }
   nav.site-nav ul {
     display: flex;
     padding: 0px;
@@ -79,10 +80,10 @@ input[type="text"] {
   background-color: #f2ebe9;
   color: var(--site-color-primary);
   font-family: "Silkscreen Regular";
-  border: 1px solid var(--site-color-primary); }
+  border: 2px solid transparent; }
   input[type="text"]:focus {
     outline: none;
-    border: 1px solid var(--text-color-emphasis); }
+    border-color: var(--text-color-emphasis); }
 
 input[type="submit"],
 button.form-button {
