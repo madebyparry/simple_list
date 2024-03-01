@@ -109,16 +109,24 @@ button.form-button {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    .site-logo {
-        letter-spacing: -14px;
-        margin-right: 20px;
-    }
     h1 > a {
         font-family: $font_primary_bold;
         text-decoration: none;
         font-size: 42px;
         letter-spacing: -7px;
         vertical-align: -1px;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            .site-logo {
+                text-decoration: none;
+            }        
+        }
+        .site-logo {
+            letter-spacing: -14px;
+            margin-right: 20px;
+            text-decoration: none;
+        }    
     }
     .header-menu-button {
         display: flex;
@@ -130,7 +138,7 @@ button.form-button {
         cursor: pointer;
         &:hover {
             // background-color: $text_color_emphasis;
-            color: $color_primary_dark;
+            color: $text_color_primary;
         }
         i {
             font-size: 22px;

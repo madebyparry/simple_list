@@ -78,15 +78,21 @@ button.form-button {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .site-header .site-logo {
-    letter-spacing: -14px;
-    margin-right: 20px; }
   .site-header h1 > a {
     font-family: "Silkscreen Bold";
     text-decoration: none;
     font-size: 42px;
     letter-spacing: -7px;
     vertical-align: -1px; }
+    .site-header h1 > a:hover {
+      text-decoration: underline;
+      text-decoration-style: wavy; }
+      .site-header h1 > a:hover .site-logo {
+        text-decoration: none; }
+    .site-header h1 > a .site-logo {
+      letter-spacing: -14px;
+      margin-right: 20px;
+      text-decoration: none; }
   .site-header .header-menu-button {
     display: flex;
     color: var(--text-color-emphasis);
@@ -94,7 +100,7 @@ button.form-button {
     letter-spacing: -2px;
     cursor: pointer; }
     .site-header .header-menu-button:hover {
-      color: var(--site-color-primary-dark); }
+      color: var(--text-color-primary); }
     .site-header .header-menu-button i {
       font-size: 22px; }
 
