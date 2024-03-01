@@ -33,6 +33,9 @@ body {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    h1 > a {
+        font-family: $font_display;
+    }
     .header-menu-button {
         padding: 10px;
         background-color: $color_primary;
@@ -71,6 +74,7 @@ input[type="submit"] {
         padding: 20px;
         border: 1px solid $color_accent;
         background-color: $color_secondary;
+        font-family: $font_primary;
         .checked {
             text-decoration: line-through;
         }

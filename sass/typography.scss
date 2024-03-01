@@ -1,10 +1,21 @@
 @font-face {
-    font-family: "Silkscreen-Regular";
+    font-family: "Silkscreen Regular";
     src: 
         local('Silkscreen Regular'),   
         url('./assets/fonts/Silkscreen-Regular.ttf') format('truetype');
 }
-
+@font-face {
+    font-family: "Silkscreen Bold";
+    src: 
+        local('Silkscreen Regular'),   
+        url('./assets/fonts/Silkscreen-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Sixtyfour";
+    src: 
+        local('Silkscreen'),   
+        url('./assets/fonts/Sixtyfour-Regular.ttf') format('truetype');
+}
 @font-face {
     font-family: "Cotham Sans";
     src: 
@@ -12,5 +23,7 @@
         url('./assets/fonts/CothamSans.otf') format('opentype');
 }
 
-$font_primary: "Silkscreen-Regular";
-$font_secondary: "Cotham Sans"
+$font_primary: "Silkscreen Regular";
+$font_primary_bold: "Silkscreen Bold";
+$font_secondary: "Cotham Sans";
+$font_display: "Sixtyfour";
