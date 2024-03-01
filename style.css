@@ -59,7 +59,8 @@ a {
 
 input {
   background-color: var(--site-color-secondary);
-  color: var(--text-color-secondary); }
+  color: var(--text-color-secondary);
+  border: none; }
 
 input[type="submit"] {
   background-color: var(--site-color-primary);
@@ -77,6 +78,9 @@ input[type="submit"] {
     padding: 10px 20px; }
     .current_list_wrapper .current_list_inner .current_list_items .checked {
       text-decoration: line-through; }
+  .current_list_wrapper .current_list_inner input[type="submit"] {
+    margin-top: 10px;
+    min-width: 220px; }
 
 .list_entry_wrapper .list_entry_inner {
   margin: 20px;

@@ -71,6 +71,7 @@ a {
 input {
     background-color: $color_secondary;
     color: $text_color_secondary;
+    border: none;
 }
 input[type="submit"] {
     background-color: $color_primary;
@@ -90,6 +91,10 @@ input[type="submit"] {
             .checked {
                 text-decoration: line-through;
             }    
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            min-width: 220px;
         }
     }
 }
