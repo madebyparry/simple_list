@@ -9,7 +9,7 @@
     // --text-color-accent: #FFF;
     // --text-color-emphasis: gold;
     --site-color-primary: #282828;
-    --site-color-primary-dark: #111;
+    --site-color-primary-dark: #222;
     --site-color-secondary: #333;
     --site-color-accent: #424242;
     --text-color-primary: #fff;
@@ -189,6 +189,7 @@ button.form-button {
     border: 1px solid $color_accent;
     background-color: $color_secondary;
     .log_screen {
+        background-color: $color_primary;
         border: 1px solid $color_accent;
         padding: 20px;
         font-family: monospace;

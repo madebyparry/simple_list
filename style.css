@@ -12,7 +12,7 @@
   src: local("Cotham Sans"), url("./assets/fonts/CothamSans.otf") format("opentype"); }
 :root {
   --site-color-primary: #282828;
-  --site-color-primary-dark: #111;
+  --site-color-primary-dark: #222;
   --site-color-secondary: #333;
   --site-color-accent: #424242;
   --text-color-primary: #fff;
@@ -152,6 +152,7 @@ button.form-button {
   border: 1px solid var(--site-color-accent);
   background-color: var(--site-color-secondary); }
   .devel-wrapper .log_screen {
+    background-color: var(--site-color-primary);
     border: 1px solid var(--site-color-accent);
     padding: 20px;
     font-family: monospace; }
