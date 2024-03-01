@@ -81,7 +81,7 @@ button.form-button {
     font-family: "Silkscreen Bold"; }
     input[type="submit"] > .button-symbol svg,
     button.form-button > .button-symbol svg {
-      width: 20px;
+      width: 13px;
       margin-right: 10px; }
   input[type="submit"] > i,
   button.form-button > i {
