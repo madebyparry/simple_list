@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $checked_items = array();
     foreach ($_POST as $key => $value) {
         if (isset($key)) {
-            array_push($checked_items, $key);
+            array_push($checked_items, trim($key));
         }
     }
     // Get list of all items at submit
@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     while(!feof($list_handler)) {
         $line = fgets($list_handler);
         if ($line != '') {
-            $current_list_items[] = str_replace(" ", "_", $line);
+            $current_list_items[] = trim(str_replace(" ", "_", $line));
         }
     }
     // reset handler pointer
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $list_handler = fopen($cwd . '/' . $list_file, 'w');
     // Write to list
     foreach ($remaining as $key => $value) {
-        fwrite($list_handler, str_replace("_", " ", $value));
+        fwrite($list_handler, trim(str_replace("_", " ", $value)));
     }
     // Close handler
     fclose($list_handler);
