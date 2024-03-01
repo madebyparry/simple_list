@@ -1,7 +1,7 @@
 <header class="site-header">
   <h1><a href="./index.php">Simple List</a></h1>
   <span class="header-menu-button-wrapper">
-    <a href="#" class="header-menu-button" onclick="toggle_menu" id="header-menu-button">=</a>
+    <span class="header-menu-button" onclick="toggle_menu" id="header-menu-button">=</span>
   </span>
 </header>
 <nav id="site-nav">
