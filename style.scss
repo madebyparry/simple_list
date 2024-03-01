@@ -1,17 +1,22 @@
-$color_primary: #dadada;
-$color_secondary: #fafafa;
+$color_primary: #fafafa;
+$color_secondary: #fff;
+$color_accent: #dadada;
+$text_color_primary: #000;
+$text_color_secondary: #111;
+$text_color_emphasis: goldenrod; 
 
 body {
     margin: 0px;
-    background-color: $color_secondary;
+    background-color: $color_primary;
+    color: $text_color_secondary;
 }
 
 .current_list_wrapper {
     .current_list_inner {
         margin: 20px;
         padding: 20px;
-        border: 1px solid $color_primary;
-        background-color: #fff;
+        border: 1px solid $color_accent;
+        background-color: $color_secondary;
         .checked {
             text-decoration: line-through;
         }
@@ -22,8 +27,8 @@ body {
     .list_entry_inner {
         margin: 20px;
         padding: 20px;
-        border: 1px solid $color_primary;
-        background-color: #fff;
+        border: 1px solid $color_accent;
+        background-color: $color_secondary;
         form {
             display: flex;
         }
@@ -40,10 +45,10 @@ body {
 .devel-wrapper {
     margin: 20px;
     padding: 20px;
-    border: 1px solid $color_primary;
-    background-color: #fff;
+    border: 1px solid $color_accent;
+    background-color: $color_secondary;
     .log_screen {
-        border: 1px solid $color_primary;
+        border: 1px solid $color_accent;
         padding: 20px;
         font-family: monospace;
     }    
