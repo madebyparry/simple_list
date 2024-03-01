@@ -9,6 +9,7 @@
     // --text-color-accent: #FFF;
     // --text-color-emphasis: gold;
     --site-color-primary: #282828;
+    --site-color-primary-dark: #111;
     --site-color-secondary: #333;
     --site-color-accent: #424242;
     --text-color-primary: #fff;
@@ -21,6 +22,7 @@
 }
 
 $color_primary: var(--site-color-primary);
+$color_primary_dark: var(--site-color-primary-dark);
 $color_secondary: var(--site-color-secondary);
 $color_accent: var(--site-color-accent);
 $text_color_primary: var(--text-color-primary);
@@ -94,8 +96,8 @@ input {
     border: none;
 }
 input[type="text"] {
-    background-color: #f2ebe9;
-    color: $color_primary;
+    background-color: $color_primary;
+    color: $text_color_primary;
     font-family: $font_primary;
     border: 2px solid transparent;
     &:focus {
@@ -105,7 +107,7 @@ input[type="text"] {
 }
 input[type="submit"],
 button.form-button {
-    background-color: $color_primary;
+    background-color: $color_primary_dark;
     color: $text_color_emphasis;
     padding: 5px 10px;
     cursor: pointer;
@@ -155,7 +157,7 @@ button.form-button {
                 text-decoration: line-through;
             }    
         }
-        input[type="submit"] {
+        input[type="submit"], button.form-button {
             margin-top: 10px;
             min-width: 220px;
         }
