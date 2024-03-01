@@ -27,9 +27,29 @@ body {
 
 .site-header {
     padding: 20px;
-    background-color: $color_primary;
+    background-color: $color_secondary;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    .header-menu-button {
+        padding: 10px;
+        background-color: $color_primary;
+        color: $text_color_emphasis;
+    }
 }
-
+nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    padding: 10px;
+}
+#site-nav.reveal {
+    display:block;
+}
+a {
+    color: $text_color_emphasis;
+}
 input {
     background-color: $color_secondary;
     color: $text_color_secondary;

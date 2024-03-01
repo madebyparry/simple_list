@@ -16,7 +16,27 @@ body {
 
 .site-header {
   padding: 20px;
-  background-color: var(--site-color-primary); }
+  background-color: var(--site-color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .site-header .header-menu-button {
+    padding: 10px;
+    background-color: var(--site-color-primary);
+    color: var(--text-color-emphasis); }
+
+nav {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  padding: 10px; }
+
+#site-nav.reveal {
+  display: block; }
+
+a {
+  color: var(--text-color-emphasis); }
 
 input {
   background-color: var(--site-color-secondary);

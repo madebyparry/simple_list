@@ -22,5 +22,11 @@ function cache_clear() {
     console.log('js caches cleared');
     caches.delete();
 }
+
+function toggle_menu() {
+    console.log('menu toggled');
+    let site_nav = document.getElementById('site-nav');
+    site_nav.classList.toggle('reveal');
+}
 check_existing();
 cache_clear();
