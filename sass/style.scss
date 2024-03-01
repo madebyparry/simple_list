@@ -41,6 +41,10 @@ body {
     font-family: "Cotham Sans", Helvetica, sans-serif;
     // background-image: linear-gradient(66deg, #888787, #757272);
 }
+.section-wrapper {
+    margin: 10px;
+    border-radius: 10px;
+}
 
 .site-header {
     padding: 20px 30px;
@@ -125,12 +129,12 @@ button.form-button {
     }
 }
 .current_list_wrapper {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid $color_accent;
+    background-color: $color_secondary;
+    font-family: $font_primary;
     .current_list_inner {
-        margin: 20px;
-        padding: 10px;
-        border: 1px solid $color_accent;
-        background-color: $color_secondary;
-        font-family: $font_primary;
         .current_list_items {
             background-color: $color_primary;
             color: $text_color_secondary;
@@ -223,3 +227,4 @@ button.form-button {
     align-content: center;
 }
 
+@import 'responsive';

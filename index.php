@@ -23,7 +23,7 @@ $devel_enable = TRUE;
         <span class="close" id="close-status-message">X</span>
     </div>    
     <?php unset($_SESSION['status_message']); endif; ?>
-    <div class="current_list_wrapper">
+    <div class="current_list_wrapper section-wrapper">
         <div class="current_list_inner" id="current_list_render">
             <form action="check_off_items.php" method="post">
                 <div class="current_list_items">
@@ -36,7 +36,7 @@ $devel_enable = TRUE;
             </form>
         </div>
     </div>
-    <div class="list_entry_wrapper">
+    <div class="list_entry_wrapper section-wrapper">
         <div class="list_entry_inner">
             <form action="get_list_entry.php" method="post">
                 <input type="text" name="new_list_entry" class="new_entry_input">
@@ -48,7 +48,7 @@ $devel_enable = TRUE;
         </div>
     </div>
     <?php if ($devel_enable): ?>
-    <div class="devel-wrapper">
+    <div class="devel-wrapper section-wrapper">
         <div class="devel-inner">
             <div class="log_screen">
                 <?php require_once('./devel_display.php'); ?>
