@@ -54,6 +54,10 @@ body {
         padding: 10px;
         background-color: $color_primary;
         color: $text_color_emphasis;
+        &:hover {
+            background-color: $text_color_emphasis;
+            color: $color_primary;
+        }
     }
 }
 nav.site-nav {
@@ -78,6 +82,11 @@ input {
     background-color: $color_primary;
     color: $text_color_secondary;
     border: none;
+}
+input[type="submit"] {
+    background-color: #EEE;
+    color: #333;
+    font-family: $font_primary;
 }
 input[type="submit"] {
     background-color: $color_primary;
