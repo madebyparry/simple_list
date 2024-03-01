@@ -33,7 +33,8 @@ body {
   align-items: center;
   justify-content: space-between; }
   .site-header h1 > a {
-    font-family: "Sixtyfour"; }
+    font-family: "Sixtyfour";
+    text-decoration: none; }
   .site-header .header-menu-button {
     padding: 10px;
     background-color: var(--site-color-primary);
@@ -70,8 +71,12 @@ input[type="submit"] {
   border: 1px solid var(--site-color-accent);
   background-color: var(--site-color-secondary);
   font-family: "Silkscreen Regular"; }
-  .current_list_wrapper .current_list_inner .checked {
-    text-decoration: line-through; }
+  .current_list_wrapper .current_list_inner .current_list_items {
+    background-color: #EEE;
+    color: #333;
+    padding: 10px 20px; }
+    .current_list_wrapper .current_list_inner .current_list_items .checked {
+      text-decoration: line-through; }
 
 .list_entry_wrapper .list_entry_inner {
   margin: 20px;
