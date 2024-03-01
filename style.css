@@ -1,58 +1,65 @@
-body {
-  margin: 0px;
-  background-color: #222;
-  color: #DDD; }
+/*
+Error: Undefined variable: "$text_color_accent".
+        on line 22 of ./style.scss
 
-.current_list_wrapper .current_list_inner {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #444;
-  background-color: #333; }
-  .current_list_wrapper .current_list_inner .checked {
-    text-decoration: line-through; }
+17:     background-color: $color_secondary;
+18:     color: $text_color_secondary;
+19: }
+20: input[type="submit"] {
+21:     background-color: $color_primary;
+22:     color: $text_color_accent;
+23: }
+24: .current_list_wrapper {
+25:     .current_list_inner {
+26:         margin: 20px;
+27:         padding: 20px;
 
-.list_entry_wrapper .list_entry_inner {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #444;
-  background-color: #333; }
-  .list_entry_wrapper .list_entry_inner form {
-    display: flex; }
-  .list_entry_wrapper .list_entry_inner .new_entry_input {
-    flex: 3; }
-  .list_entry_wrapper .list_entry_inner .new_entry_submit {
-    flex: 1;
-    height: 30px; }
-
-.devel-wrapper {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #444;
-  background-color: #333; }
-  .devel-wrapper .log_screen {
-    border: 1px solid #444;
-    padding: 20px;
-    font-family: monospace; }
-  .devel-wrapper .devel-form {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px; }
-    .devel-wrapper .devel-form .form-item {
-      flex: 1;
-      display: flex; }
-      .devel-wrapper .devel-form .form-item input[type="text"],
-      .devel-wrapper .devel-form .form-item input[type="submit"] {
-        width: 100%; }
-    .devel-wrapper .devel-form .form-input {
-      flex: 3; }
-
-.status-message {
-  margin: 0px 20px;
-  padding: 20px;
-  background-color: lightgreen;
-  border: 1px solid green;
-  display: flex;
-  justify-content: space-between;
-  align-content: center; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+./style.scss:22
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:383:in `run'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/bin/sass:8:in `<top (required)>'
+/usr/bin/sass:25:in `load'
+/usr/bin/sass:25:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$text_color_accent\".\A         on line 22 of ./style.scss\A \A 17:     background-color: $color_secondary;\A 18:     color: $text_color_secondary;\A 19: }\A 20: input[type=\"submit\"] {\A 21:     background-color: $color_primary;\A 22:     color: $text_color_accent;\A 23: }\A 24: .current_list_wrapper {\A 25:     .current_list_inner {\A 26:         margin: 20px;\A 27:         padding: 20px;"; }
