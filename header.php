@@ -1,5 +1,5 @@
 <header class="site-header">
-  <h1><a href="./index.php"><span class="site-logo">///</span>Simple List</a></h1>
+  <h1><a href="./index.php"><span class="site-logo">///</span><span class="site-name">Simple_List</span></a></h1>
   <span class="header-menu-button-wrapper">
     <span class="header-menu-button" onclick="toggle_menu()" id="header-menu-button">|||</span>
   </span>

@@ -12,7 +12,7 @@
   src: local("Cotham Sans"), url("./assets/fonts/CothamSans.otf") format("opentype"); }
 :root {
   --site-color-primary: #131c26;
-  --site-color-primary-dark: #050505;
+  --site-color-primary-dark: #06090d;
   --site-color-secondary: #0c0d13;
   --site-color-accent: #424242;
   --text-color-primary: #fff;
@@ -55,7 +55,7 @@ input[type="text"] {
 input[type="submit"],
 button.form-button {
   background-color: var(--site-color-primary-dark);
-  color: var(--text-color-primary);
+  color: var(--text-color-accent);
   padding: 5px 10px;
   cursor: pointer;
   text-transform: capitalize;
@@ -84,15 +84,13 @@ button.form-button {
     font-size: 42px;
     letter-spacing: -7px;
     vertical-align: -1px; }
-    .site-header h1 > a:hover {
+    .site-header h1 > a .site-name:hover {
       text-decoration: underline;
-      text-decoration-style: wavy; }
-      .site-header h1 > a:hover .site-logo {
-        text-decoration: none; }
+      text-decoration-style: wavy;
+      color: var(--text-color-accent); }
     .site-header h1 > a .site-logo {
       letter-spacing: -14px;
-      margin-right: 20px;
-      text-decoration: none; }
+      margin-right: 15px; }
   .site-header .header-menu-button {
     display: flex;
     color: var(--text-color-emphasis);
@@ -120,8 +118,9 @@ nav.site-nav {
 
 .current_list_wrapper .current_list_inner .current_list_items {
   background-color: var(--site-color-primary);
-  color: var(--text-color-secondary);
-  font-family: "Silkscreen Regular"; }
+  color: var(--text-color-primary);
+  font-family: "Silkscreen Regular";
+  border-radius: 3px; }
   .current_list_wrapper .current_list_inner .current_list_items .list-item {
     padding: 5px 20px;
     cursor: pointer;
@@ -132,7 +131,7 @@ nav.site-nav {
     .current_list_wrapper .current_list_inner .current_list_items .list-item > input {
       cursor: inherit; }
     .current_list_wrapper .current_list_inner .current_list_items .list-item:nth-child(2n) {
-      background-color: rgba(10, 10, 10, 0.25); }
+      background-color: rgba(10, 10, 10, 0.5); }
     .current_list_wrapper .current_list_inner .current_list_items .list-item:hover {
       background-color: rgba(240, 80, 31, 0.25); }
   .current_list_wrapper .current_list_inner .current_list_items .checked {
