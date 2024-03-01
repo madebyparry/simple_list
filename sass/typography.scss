@@ -1,105 +1,16 @@
-:root {
-  --site-color-primary: #222;
-  --site-color-secondary: #333;
-  --site-color-accent: #444;
-  --text-color-primary: #EEE;
-  --text-color-secondary: #DDD;
-  --text-color-accent: #FFF;
-  --text-color-emphasis: gold; }
+@font-face {
+    font-family: "Silkscreen-Regular";
+    src: 
+        local('Silkscreen Regular'),   
+        url('./assets/fonts/Silkscreen-Regular.ttf') format('truetype');
+}
 
-body {
-  margin: 0px;
-  background-color: var(--site-color-primary);
-  border-color: var(--text-color-secondary);
-  color: var(--text-color-secondary);
-  font-family: Arial, Helvetica, sans-serif; }
+@font-face {
+    font-family: "Cotham Sans";
+    src: 
+        local('Cotham Sans'),   
+        url('./assets/fonts/CothamSans.otf') format('opentype');
+}
 
-.site-header {
-  padding: 20px;
-  background-color: var(--site-color-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  .site-header .header-menu-button {
-    padding: 10px;
-    background-color: var(--site-color-primary);
-    color: var(--text-color-emphasis); }
-
-nav.site-nav {
-  display: none;
-  position: relative;
-  padding: 10px 20px;
-  background-color: var(--site-color-secondary); }
-  nav.site-nav ul {
-    display: flex;
-    padding: 0px;
-    justify-content: space-between;
-    list-style-type: none; }
-
-#site-nav.reveal {
-  display: block; }
-
-a {
-  color: var(--text-color-emphasis); }
-
-input {
-  background-color: var(--site-color-secondary);
-  color: var(--text-color-secondary); }
-
-input[type="submit"] {
-  background-color: var(--site-color-primary);
-  color: var(--text-color-emphasis); }
-
-.current_list_wrapper .current_list_inner {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid var(--site-color-accent);
-  background-color: var(--site-color-secondary); }
-  .current_list_wrapper .current_list_inner .checked {
-    text-decoration: line-through; }
-
-.list_entry_wrapper .list_entry_inner {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid var(--site-color-accent);
-  background-color: var(--site-color-secondary); }
-  .list_entry_wrapper .list_entry_inner form {
-    display: flex; }
-  .list_entry_wrapper .list_entry_inner .new_entry_input {
-    flex: 3; }
-  .list_entry_wrapper .list_entry_inner .new_entry_submit {
-    flex: 1;
-    height: 30px; }
-
-.devel-wrapper {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid var(--site-color-accent);
-  background-color: var(--site-color-secondary); }
-  .devel-wrapper .log_screen {
-    border: 1px solid var(--site-color-accent);
-    padding: 20px;
-    font-family: monospace; }
-  .devel-wrapper .devel-form {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px; }
-    .devel-wrapper .devel-form .form-item {
-      flex: 1;
-      display: flex; }
-      .devel-wrapper .devel-form .form-item input[type="text"],
-      .devel-wrapper .devel-form .form-item input[type="submit"] {
-        width: 100%; }
-    .devel-wrapper .devel-form .form-input {
-      flex: 3; }
-
-.status-message {
-  margin: 0px 20px;
-  padding: 20px;
-  background-color: lightgreen;
-  border: 1px solid green;
-  display: flex;
-  justify-content: space-between;
-  align-content: center; }
-
-/*# sourceMappingURL=typography.scss.map */
+$font_primary: "Silkscreen-Regular";
+$font_secondary: "Cotham Sans"
