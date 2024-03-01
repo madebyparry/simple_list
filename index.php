@@ -16,8 +16,8 @@ $devel_enable = FALSE;
     require_once('./header.php');
     session_start();
     if (isset($_SESSION['status_message'])): ?>
-    <div class="status-message">
-        <span class="status-inner" id="status-message">
+    <div class="status-message" id="status-message">
+        <span class="status-inner">
             <?php echo $_SESSION['status_message']; ?>
         </span>
         <span class="close" id="close-status-message" onclick="close_status()"><?php include("./assets/icons/simple_list_close.svg");?></span>
