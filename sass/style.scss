@@ -84,7 +84,7 @@ input {
     border: none;
 }
 input[type="text"] {
-    background-color: mix(#fff, #f0be92, 0.5);
+    background-color: #e6ceba;
     color: #333;
     font-family: $font_primary;
 }
@@ -105,7 +105,7 @@ input[type="submit"] {
         background-color: $color_secondary;
         font-family: $font_primary;
         .current_list_items {
-            // background-color: #EEE;
+            background-color: #e6ceba;
             // color: #333;
             padding: 10px 20px;
             .checked {

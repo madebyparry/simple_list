@@ -69,7 +69,7 @@ input {
   border: none; }
 
 input[type="text"] {
-  background-color: #f0be93;
+  background-color: #e6ceba;
   color: #333;
   font-family: "Silkscreen Regular"; }
 
@@ -88,6 +88,7 @@ input[type="submit"] {
   background-color: var(--site-color-secondary);
   font-family: "Silkscreen Regular"; }
   .current_list_wrapper .current_list_inner .current_list_items {
+    background-color: #e6ceba;
     padding: 10px 20px; }
     .current_list_wrapper .current_list_inner .current_list_items .checked {
       text-decoration: line-through; }
