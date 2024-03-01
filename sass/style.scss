@@ -8,9 +8,9 @@
     // --text-color-secondary: #DDD;
     // --text-color-accent: #FFF;
     // --text-color-emphasis: gold;
-    --site-color-primary: #080c11;
+    --site-color-primary: #131c26;
     --site-color-primary-dark: #111;
-    --site-color-secondary: #05060b;
+    --site-color-secondary: #0c0d13;
     --site-color-accent: #424242;
     --text-color-primary: #fff;
     --text-color-secondary: #EEE;
@@ -85,6 +85,7 @@ button.form-button {
     align-items: center;
     justify-content: center;
     border: none;
+    border-radius: 3px;
     &:hover {
         color: $color_primary;
         background-color: $text_color_emphasis;
@@ -108,12 +109,15 @@ button.form-button {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid $color_accent;
+    .site-logo {
+        letter-spacing: -16px;
+        margin-right: 20px;
+    }
     h1 > a {
         font-family: $font_primary_bold;
         text-decoration: none;
         font-size: 42px;
-        letter-spacing: -4px;
+        letter-spacing: -9px;
         vertical-align: -1px;
     }
     .header-menu-button {
@@ -121,6 +125,7 @@ button.form-button {
         padding: 10px;
         background-color: $color_primary;
         color: $text_color_emphasis;
+        font-family: $font_primary_bold;
         cursor: pointer;
         &:hover {
             background-color: $text_color_emphasis;
@@ -136,7 +141,6 @@ nav.site-nav {
     position: relative;
     padding: 5px 30px;
     background-color: $color_secondary;
-    border-bottom: 1px solid $color_accent;
     ul {
         display: flex;
         padding: 0px;
@@ -153,6 +157,7 @@ nav.site-nav {
         .current_list_items {
             background-color: $color_primary;
             color: $text_color_secondary;
+            font-family: $font_primary;
             // padding: 10px 0px;
             .list-item {
                 padding: 5px 20px;

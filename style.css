@@ -11,9 +11,9 @@
   font-family: "Cotham Sans";
   src: local("Cotham Sans"), url("./assets/fonts/CothamSans.otf") format("opentype"); }
 :root {
-  --site-color-primary: #080c11;
+  --site-color-primary: #131c26;
   --site-color-primary-dark: #111;
-  --site-color-secondary: #05060b;
+  --site-color-secondary: #0c0d13;
   --site-color-accent: #424242;
   --text-color-primary: #fff;
   --text-color-secondary: #EEE;
@@ -62,7 +62,8 @@ button.form-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none; }
+  border: none;
+  border-radius: 3px; }
   input[type="submit"]:hover,
   button.form-button:hover {
     color: var(--site-color-primary);
@@ -76,19 +77,22 @@ button.form-button {
   background-color: var(--site-color-secondary);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--site-color-accent); }
+  justify-content: space-between; }
+  .site-header .site-logo {
+    letter-spacing: -16px;
+    margin-right: 20px; }
   .site-header h1 > a {
     font-family: "Silkscreen Bold";
     text-decoration: none;
     font-size: 42px;
-    letter-spacing: -4px;
+    letter-spacing: -9px;
     vertical-align: -1px; }
   .site-header .header-menu-button {
     display: flex;
     padding: 10px;
     background-color: var(--site-color-primary);
     color: var(--text-color-emphasis);
+    font-family: "Silkscreen Bold";
     cursor: pointer; }
     .site-header .header-menu-button:hover {
       background-color: var(--text-color-emphasis);
@@ -100,8 +104,7 @@ nav.site-nav {
   display: none;
   position: relative;
   padding: 5px 30px;
-  background-color: var(--site-color-secondary);
-  border-bottom: 1px solid var(--site-color-accent); }
+  background-color: var(--site-color-secondary); }
   nav.site-nav ul {
     display: flex;
     padding: 0px;
@@ -113,7 +116,8 @@ nav.site-nav {
 
 .current_list_wrapper .current_list_inner .current_list_items {
   background-color: var(--site-color-primary);
-  color: var(--text-color-secondary); }
+  color: var(--text-color-secondary);
+  font-family: "Silkscreen Regular"; }
   .current_list_wrapper .current_list_inner .current_list_items .list-item {
     padding: 5px 20px;
     cursor: pointer;
