@@ -111,13 +111,19 @@ button.form-button {
   background-color: var(--site-color-secondary);
   font-family: "Silkscreen Regular"; }
   .current_list_wrapper .current_list_inner .current_list_items {
-    background-color: #f2ebe9;
-    color: var(--site-color-primary); }
+    background-color: var(--site-color-primary);
+    color: var(--text-color-secondary); }
     .current_list_wrapper .current_list_inner .current_list_items .list-item {
       padding: 5px 20px;
-      cursor: pointer; }
+      cursor: pointer;
+      display: flex; }
+      .current_list_wrapper .current_list_inner .current_list_items .list-item > label {
+        flex: 1;
+        cursor: inherit; }
+      .current_list_wrapper .current_list_inner .current_list_items .list-item > input {
+        cursor: inherit; }
       .current_list_wrapper .current_list_inner .current_list_items .list-item:nth-child(2n) {
-        background-color: rgba(10, 10, 10, 0.1); }
+        background-color: rgba(10, 10, 10, 0.25); }
       .current_list_wrapper .current_list_inner .current_list_items .list-item:hover {
         background-color: rgba(240, 80, 31, 0.25); }
     .current_list_wrapper .current_list_inner .current_list_items .checked {
