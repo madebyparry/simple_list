@@ -55,6 +55,7 @@ body {
         vertical-align: -1px;
     }
     .header-menu-button {
+        display: flex;
         padding: 10px;
         background-color: $color_primary;
         color: $text_color_emphasis;
@@ -62,6 +63,9 @@ body {
         &:hover {
             background-color: $text_color_emphasis;
             color: $color_primary;
+        }
+        i {
+            font-size: 22px;
         }
     }
 }
