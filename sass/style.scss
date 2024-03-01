@@ -9,14 +9,14 @@
     // --text-color-accent: #FFF;
     // --text-color-emphasis: gold;
     --site-color-primary: #282828;
-    --site-color-secondary: #db9b63;
-    --site-color-accent: #333;
-    --text-color-primary: #333;
-    --text-color-secondary: #444;
-    --text-color-accent: #df4d14;
-    --text-color-emphasis: #772504;
-
-    --site-color-success: #4e7c4e;
+    --site-color-secondary: #333;
+    --site-color-accent: #424242;
+    --text-color-primary: #fff;
+    --text-color-secondary: #EEE;
+    --text-color-accent: #d58a6d;
+    --text-color-emphasis: #f0501f;
+    
+    --site-color-success: #628c62;
     --text-color-success: #123112;
 }
 
@@ -55,6 +55,7 @@ body {
         padding: 10px;
         background-color: $color_primary;
         color: $text_color_emphasis;
+        cursor: pointer;
         &:hover {
             background-color: $text_color_emphasis;
             color: $color_primary;
@@ -91,11 +92,11 @@ input[type="text"] {
 }
 input[type="submit"] {
     background-color: $color_primary;
-    color: $color_secondary;
+    color: $text_color_emphasis;
     padding: 5px 10px;
     &:hover {
         color: $color_primary;
-        background-color: $color_secondary;
+        background-color: $text_color_emphasis;
     }
 }
 .current_list_wrapper {
