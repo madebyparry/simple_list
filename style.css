@@ -67,7 +67,7 @@ input {
   color: var(--text-color-secondary);
   border: none; }
 
-input[type="submit"] {
+input[type="text"] {
   background-color: #EEE;
   color: #333;
   font-family: "Silkscreen Regular"; }
