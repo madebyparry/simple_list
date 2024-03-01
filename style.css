@@ -67,7 +67,7 @@ button.form-button {
   input[type="submit"]:hover,
   button.form-button:hover {
     color: var(--site-color-primary-dark);
-    background-color: var(--text-color-accent); }
+    background-color: var(--text-color-emphasis); }
   input[type="submit"] > .button-symbol,
   button.form-button > .button-symbol {
     letter-spacing: -7px;
@@ -135,7 +135,7 @@ nav.site-nav {
     .current_list_wrapper .current_list_inner .current_list_items .list-item > input {
       cursor: inherit; }
     .current_list_wrapper .current_list_inner .current_list_items .list-item:nth-child(2n) {
-      background-color: rgba(10, 10, 10, 0.5); }
+      background-color: rgba(0, 0, 0, 0.5); }
     .current_list_wrapper .current_list_inner .current_list_items .list-item:hover {
       background-color: rgba(240, 80, 31, 0.25); }
   .current_list_wrapper .current_list_inner .current_list_items .checked {
