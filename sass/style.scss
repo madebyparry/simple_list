@@ -8,14 +8,13 @@
     // --text-color-secondary: #DDD;
     // --text-color-accent: #FFF;
     // --text-color-emphasis: gold;
-    --site-color-primary: #0a071c;
-    --site-color-secondary: #0c0c22;
+    --site-color-primary: #282828;
+    --site-color-secondary: #f0be92;
     --site-color-accent: #333;
     --text-color-primary: #EEE;
     --text-color-secondary: #DDD;
     --text-color-accent: #FFF;
-    --text-color-emphasis: #f9c320;
-
+    --text-color-emphasis: #df4d14;
 
     --site-color-success: #4e7c4e;
     --text-color-success: #123112;
@@ -38,6 +37,7 @@ body {
     border-color: $text_color_secondary;
     color: $text_color_secondary;
     font-family: "Cotham Sans", Helvetica, sans-serif;
+    background-image: linear-gradient(77deg, #444, #555);
 }
 
 .site-header {
