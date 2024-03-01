@@ -1,7 +1,3 @@
-<?php 
-    include 'constants.php';
-?>
-
 <div class="site-header">
   <h1><a href="./index.php">Simple List</a></h1>
   <nav>
