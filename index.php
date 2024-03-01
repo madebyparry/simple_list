@@ -28,7 +28,7 @@ $devel_enable = TRUE;
                 <div class="current_list_items">
                     <?php require_once('./display_list.php'); ?>
                 </div>
-                <input type="submit" value="save list">
+                <input type="submit" value="Clear checked items">
             </form>
         </div>
     </div>

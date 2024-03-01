@@ -26,8 +26,7 @@ body {
   background-color: var(--site-color-primary);
   border-color: var(--text-color-secondary);
   color: var(--text-color-secondary);
-  font-family: "Cotham Sans", Helvetica, sans-serif;
-  background-image: linear-gradient(66deg, #888787, #757272); }
+  font-family: "Cotham Sans", Helvetica, sans-serif; }
 
 .site-header {
   padding: 20px;
@@ -38,7 +37,10 @@ body {
   border-bottom: 1px solid var(--site-color-accent); }
   .site-header h1 > a {
     font-family: "Silkscreen Bold";
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 42px;
+    letter-spacing: -4px;
+    vertical-align: -1px; }
   .site-header .header-menu-button {
     padding: 10px;
     background-color: var(--site-color-primary);
@@ -71,14 +73,15 @@ input {
   border: none; }
 
 input[type="text"] {
-  background-color: #fac294;
-  color: #333;
+  background-color: #f2ebe9;
+  color: var(--site-color-primary);
   font-family: "Silkscreen Regular"; }
 
 input[type="submit"] {
   background-color: var(--site-color-primary);
   color: var(--text-color-emphasis);
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  cursor: pointer; }
   input[type="submit"]:hover {
     color: var(--site-color-primary);
     background-color: var(--text-color-emphasis); }
@@ -90,7 +93,8 @@ input[type="submit"] {
   background-color: var(--site-color-secondary);
   font-family: "Silkscreen Regular"; }
   .current_list_wrapper .current_list_inner .current_list_items {
-    background-color: #fac294;
+    background-color: #f2ebe9;
+    color: var(--site-color-primary);
     padding: 10px 20px; }
     .current_list_wrapper .current_list_inner .current_list_items .checked {
       text-decoration: line-through; }

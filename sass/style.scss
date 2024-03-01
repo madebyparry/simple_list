@@ -37,7 +37,7 @@ body {
     border-color: $text_color_secondary;
     color: $text_color_secondary;
     font-family: "Cotham Sans", Helvetica, sans-serif;
-    background-image: linear-gradient(66deg, #888787, #757272);
+    // background-image: linear-gradient(66deg, #888787, #757272);
 }
 
 .site-header {
@@ -50,6 +50,9 @@ body {
     h1 > a {
         font-family: $font_primary_bold;
         text-decoration: none;
+        font-size: 42px;
+        letter-spacing: -4px;
+        vertical-align: -1px;
     }
     .header-menu-button {
         padding: 10px;
@@ -86,14 +89,15 @@ input {
     border: none;
 }
 input[type="text"] {
-    background-color: #fac294;
-    color: #333;
+    background-color: #f2ebe9;
+    color: $color_primary;
     font-family: $font_primary;
 }
 input[type="submit"] {
     background-color: $color_primary;
     color: $text_color_emphasis;
     padding: 5px 10px;
+    cursor: pointer;
     &:hover {
         color: $color_primary;
         background-color: $text_color_emphasis;
@@ -107,8 +111,8 @@ input[type="submit"] {
         background-color: $color_secondary;
         font-family: $font_primary;
         .current_list_items {
-            background-color: #fac294;
-            // color: #333;
+            background-color: #f2ebe9;
+            color: $color_primary;
             padding: 10px 20px;
             .checked {
                 text-decoration: line-through;
