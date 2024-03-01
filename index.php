@@ -1,6 +1,6 @@
 <?php
 include 'constants.php';
-$devel_enable = TRUE;
+$devel_enable = FALSE;
 ?>
 <!DOCTYPE html>
 <html lang="en" style="height: 100%;">
