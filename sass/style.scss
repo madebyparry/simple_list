@@ -1,13 +1,20 @@
 @import "typography";
 
 :root {
-    --site-color-primary: #222;
-    --site-color-secondary: #333;
-    --site-color-accent: #444;
+    // --site-color-primary: #222;
+    // --site-color-secondary: #333;
+    // --site-color-accent: #444;
+    // --text-color-primary: #EEE;
+    // --text-color-secondary: #DDD;
+    // --text-color-accent: #FFF;
+    // --text-color-emphasis: gold;
+    --site-color-primary: #0a071c;
+    --site-color-secondary: #23232f;
+    --site-color-accent: #484421;
     --text-color-primary: #EEE;
     --text-color-secondary: #DDD;
     --text-color-accent: #FFF;
-    --text-color-emphasis: gold;
+    --text-color-emphasis: #f9c320;
 }
 
 $color_primary: var(--site-color-primary);
@@ -34,7 +41,7 @@ body {
     align-items: center;
     justify-content: space-between;
     h1 > a {
-        font-family: $font_display;
+        font-family: $font_primary_bold;
         text-decoration: none;
     }
     .header-menu-button {
