@@ -12,7 +12,7 @@
   src: local("Cotham Sans"), url("./assets/fonts/CothamSans.otf") format("opentype"); }
 :root {
   --site-color-primary: #131c26;
-  --site-color-primary-dark: #111;
+  --site-color-primary-dark: #050505;
   --site-color-secondary: #0c0d13;
   --site-color-accent: #424242;
   --text-color-primary: #fff;
@@ -55,7 +55,7 @@ input[type="text"] {
 input[type="submit"],
 button.form-button {
   background-color: var(--site-color-primary-dark);
-  color: var(--text-color-emphasis);
+  color: var(--text-color-primary);
   padding: 5px 10px;
   cursor: pointer;
   text-transform: capitalize;
@@ -79,24 +79,22 @@ button.form-button {
   align-items: center;
   justify-content: space-between; }
   .site-header .site-logo {
-    letter-spacing: -16px;
+    letter-spacing: -14px;
     margin-right: 20px; }
   .site-header h1 > a {
     font-family: "Silkscreen Bold";
     text-decoration: none;
     font-size: 42px;
-    letter-spacing: -9px;
+    letter-spacing: -7px;
     vertical-align: -1px; }
   .site-header .header-menu-button {
     display: flex;
-    padding: 10px;
-    background-color: var(--site-color-primary);
     color: var(--text-color-emphasis);
     font-family: "Silkscreen Bold";
+    letter-spacing: -2px;
     cursor: pointer; }
     .site-header .header-menu-button:hover {
-      background-color: var(--text-color-emphasis);
-      color: var(--site-color-primary); }
+      color: var(--site-color-primary-dark); }
     .site-header .header-menu-button i {
       font-size: 22px; }
 
