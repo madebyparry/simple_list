@@ -101,12 +101,15 @@ input[type="text"] {
         border: 1px solid $text_color_emphasis;
     }
 }
-input[type="submit"] {
+input[type="submit"],
+button.form-button {
     background-color: $color_primary;
     color: $text_color_emphasis;
     padding: 5px 10px;
     cursor: pointer;
     text-transform: capitalize;
+    display: flex;
+    align-items: center;
     &:hover {
         color: $color_primary;
         background-color: $text_color_emphasis;

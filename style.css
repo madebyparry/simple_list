@@ -42,6 +42,7 @@ body {
     letter-spacing: -4px;
     vertical-align: -1px; }
   .site-header .header-menu-button {
+    display: flex;
     padding: 10px;
     background-color: var(--site-color-primary);
     color: var(--text-color-emphasis);
@@ -49,6 +50,8 @@ body {
     .site-header .header-menu-button:hover {
       background-color: var(--text-color-emphasis);
       color: var(--site-color-primary); }
+    .site-header .header-menu-button i {
+      font-size: 22px; }
 
 nav.site-nav {
   display: none;
@@ -80,13 +83,17 @@ input[type="text"] {
     outline: none;
     border: 1px solid var(--text-color-emphasis); }
 
-input[type="submit"] {
+input[type="submit"],
+button.form-button {
   background-color: var(--site-color-primary);
   color: var(--text-color-emphasis);
   padding: 5px 10px;
   cursor: pointer;
-  text-transform: capitalize; }
-  input[type="submit"]:hover {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center; }
+  input[type="submit"]:hover,
+  button.form-button:hover {
     color: var(--site-color-primary);
     background-color: var(--text-color-emphasis); }
 
