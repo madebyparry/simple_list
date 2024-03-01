@@ -43,7 +43,7 @@ body {
 }
 
 .site-header {
-    padding: 20px;
+    padding: 20px 30px;
     background-color: $color_secondary;
     display:flex;
     align-items: center;
@@ -74,7 +74,7 @@ body {
 nav.site-nav {
     display: none;
     position: relative;
-    padding: 10px 20px;
+    padding: 5px 30px;
     background-color: $color_secondary;
     border-bottom: 1px solid $color_accent;
     ul {
@@ -127,7 +127,7 @@ button.form-button {
 .current_list_wrapper {
     .current_list_inner {
         margin: 20px;
-        padding: 20px;
+        padding: 10px;
         border: 1px solid $color_accent;
         background-color: $color_secondary;
         font-family: $font_primary;
@@ -167,7 +167,7 @@ button.form-button {
 .list_entry_wrapper {
     .list_entry_inner {
         margin: 20px;
-        padding: 20px;
+        padding: 10px;
         border: 1px solid $color_accent;
         background-color: $color_secondary;
         form {
@@ -185,7 +185,7 @@ button.form-button {
 
 .devel-wrapper {
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid $color_accent;
     background-color: $color_secondary;
     .log_screen {

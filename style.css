@@ -30,7 +30,7 @@ body {
   font-family: "Cotham Sans", Helvetica, sans-serif; }
 
 .site-header {
-  padding: 20px;
+  padding: 20px 30px;
   background-color: var(--site-color-secondary);
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ body {
 nav.site-nav {
   display: none;
   position: relative;
-  padding: 10px 20px;
+  padding: 5px 30px;
   background-color: var(--site-color-secondary);
   border-bottom: 1px solid var(--site-color-accent); }
   nav.site-nav ul {
@@ -107,7 +107,7 @@ button.form-button {
 
 .current_list_wrapper .current_list_inner {
   margin: 20px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid var(--site-color-accent);
   background-color: var(--site-color-secondary);
   font-family: "Silkscreen Regular"; }
@@ -135,7 +135,7 @@ button.form-button {
 
 .list_entry_wrapper .list_entry_inner {
   margin: 20px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid var(--site-color-accent);
   background-color: var(--site-color-secondary); }
   .list_entry_wrapper .list_entry_inner form {
@@ -148,7 +148,7 @@ button.form-button {
 
 .devel-wrapper {
   margin: 20px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid var(--site-color-accent);
   background-color: var(--site-color-secondary); }
   .devel-wrapper .log_screen {
