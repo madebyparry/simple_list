@@ -30,6 +30,9 @@
         fclose($list_handler);
         }
         $status_message = 'List item added: ' . $entry;
+        $debug_array = array();
+        $debug_array['get_list_entry - last_line'] = $last_line;
+        $debug_array['get_list_entry - entry'] = $entry;
     }
 
     // print list

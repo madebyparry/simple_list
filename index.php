@@ -1,5 +1,6 @@
 <?php
 include 'constants.php';
+$devel_enable = TRUE;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +37,7 @@ include 'constants.php';
             </form>
         </div>
     </div>
+    <?php if ($devel_enable): ?>
     <div class="devel-wrapper">
         <div class="devel-inner">
             <div class="log_screen">
@@ -55,6 +57,7 @@ include 'constants.php';
             </form>
         </div>
     </div>
+    <?php endif; ?>
     <script src="interface.js?v=1"></script>
 </body>
 </html>

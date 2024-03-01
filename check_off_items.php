@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // Close handler
     fclose($list_handler);
-    $status_message = 'Items successfully removed from Item List';
+    $status_message = count($checked_items) . ' items successfully removed from Item List';
     $debug_array = array();
     $debug_array['checked'] = $checked_items;
     $debug_array['current'] = $current_list_items;
