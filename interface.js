@@ -29,4 +29,4 @@ function toggle_menu() {
     site_nav.classList.toggle('reveal');
 }
 check_existing();
-cache_clear();
+// cache_clear();
