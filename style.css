@@ -12,8 +12,8 @@
   src: local("Cotham Sans"), url("./assets/fonts/CothamSans.otf") format("opentype"); }
 :root {
   --site-color-primary: #0a071c;
-  --site-color-secondary: #23232f;
-  --site-color-accent: #484421;
+  --site-color-secondary: #0c0c22;
+  --site-color-accent: #333;
   --text-color-primary: #EEE;
   --text-color-secondary: #DDD;
   --text-color-accent: #FFF;
@@ -60,7 +60,7 @@ a {
   color: var(--text-color-emphasis); }
 
 input {
-  background-color: var(--site-color-secondary);
+  background-color: var(--site-color-primary);
   color: var(--text-color-secondary);
   border: none; }
 
@@ -122,8 +122,9 @@ input[type="submit"] {
 .status-message {
   margin: 0px 20px;
   padding: 20px;
-  background-color: lightgreen;
-  border: 1px solid green;
+  background-color: var(--site-color-success);
+  border: 1px solid var(--text-color-success);
+  color: var(--text-color-success);
   display: flex;
   justify-content: space-between;
   align-content: center; }
