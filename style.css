@@ -29,6 +29,11 @@ body {
   color: var(--text-color-secondary);
   font-family: "Cotham Sans", Helvetica, sans-serif; }
 
+svg {
+  width: 25px; }
+  svg .cls-1 {
+    fill: currentColor; }
+
 .section-wrapper {
   margin: 20px;
   padding: 10px;
@@ -72,6 +77,10 @@ button.form-button {
   button.form-button > .button-symbol {
     letter-spacing: -7px;
     font-family: "Silkscreen Bold"; }
+    input[type="submit"] > .button-symbol svg,
+    button.form-button > .button-symbol svg {
+      width: 20px;
+      margin-right: 10px; }
   input[type="submit"] > i,
   button.form-button > i {
     margin-right: 10px; }

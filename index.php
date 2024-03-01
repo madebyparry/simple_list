@@ -30,7 +30,7 @@ $devel_enable = TRUE;
                     <?php require_once('./display_list.php'); ?>
                 </div>
                 <button type="submit" value="Clear checked items" class="form-button">
-                    <span class="button-symbol"><?php include_once("./assets/icons/simple_list_close.svg"); $_SESSION['debug_messages'] = file_get_contents("./assets/icons/simple_list_close.svg"); ?></span>
+                    <span class="button-symbol"><?php include_once("./assets/icons/simple_list_close.svg");?></span>
                     Clear Checked Items
                 </button>
             </form>
