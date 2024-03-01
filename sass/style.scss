@@ -8,9 +8,9 @@
     // --text-color-secondary: #DDD;
     // --text-color-accent: #FFF;
     // --text-color-emphasis: gold;
-    --site-color-primary: #181818;
+    --site-color-primary: #080c11;
     --site-color-primary-dark: #111;
-    --site-color-secondary: #242424;
+    --site-color-secondary: #05060b;
     --site-color-accent: #424242;
     --text-color-primary: #fff;
     --text-color-secondary: #EEE;
@@ -33,6 +33,14 @@ $text_color_emphasis: var(--text-color-emphasis);
 $color_success: var(--site-color-success);
 $text_color_success: var(--text-color-success);
 
+// --------------------------------------------------
+//
+// --------------------------------------------------
+//                  Page elements
+// --------------------------------------------------
+//
+// --------------------------------------------------
+
 body {
     margin: 0px;
     background-color: $color_primary;
@@ -43,8 +51,56 @@ body {
 }
 .section-wrapper {
     margin: 20px;
+    padding: 10px;
     border-radius: 5px;
+    // border: 1px solid $color_accent;
+    background-color: $color_secondary;
 }
+a {
+    color: $text_color_emphasis;
+}
+input {
+    background-color: $color_primary;
+    color: $text_color_secondary;
+    border: none;
+}
+input[type="text"] {
+    background-color: $color_primary;
+    color: $text_color_primary;
+    font-family: $font_primary;
+    border: 2px solid transparent;
+    &:focus {
+        outline: none;
+        border-color: $text_color_emphasis;
+    }
+}
+input[type="submit"],
+button.form-button {
+    background-color: $color_primary_dark;
+    color: $text_color_emphasis;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    &:hover {
+        color: $color_primary;
+        background-color: $text_color_emphasis;
+    }
+    > i {
+        margin-right: 10px;
+    }
+}
+
+// --------------------------------------------------
+//
+// --------------------------------------------------
+//                  Page sections
+// --------------------------------------------------
+//
+// --------------------------------------------------
 
 .site-header {
     padding: 20px 30px;
@@ -91,49 +147,8 @@ nav.site-nav {
 #site-nav.reveal {
     display:block;
 }
-a {
-    color: $text_color_emphasis;
-}
-input {
-    background-color: $color_primary;
-    color: $text_color_secondary;
-    border: none;
-}
-input[type="text"] {
-    background-color: $color_primary;
-    color: $text_color_primary;
-    font-family: $font_primary;
-    border: 2px solid transparent;
-    &:focus {
-        outline: none;
-        border-color: $text_color_emphasis;
-    }
-}
-input[type="submit"],
-button.form-button {
-    background-color: $color_primary_dark;
-    color: $text_color_emphasis;
-    padding: 5px 10px;
-    cursor: pointer;
-    text-transform: capitalize;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    &:hover {
-        color: $color_primary;
-        background-color: $text_color_emphasis;
-    }
-    > i {
-        margin-right: 10px;
-    }
-}
+
 .current_list_wrapper {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid $color_accent;
-    background-color: $color_secondary;
-    font-family: $font_primary;
     .current_list_inner {
         .current_list_items {
             background-color: $color_primary;
@@ -169,10 +184,6 @@ button.form-button {
 }
 
 .list_entry_wrapper {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid $color_accent;
-    background-color: $color_secondary;
     .list_entry_inner {
         form {
             display: flex;
@@ -188,10 +199,6 @@ button.form-button {
 }
 
 .devel-wrapper {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid $color_accent;
-    background-color: $color_secondary;
     .log_screen {
         background-color: $color_primary;
         border: 1px solid $color_accent;
