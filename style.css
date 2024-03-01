@@ -78,7 +78,7 @@ button.form-button {
     background-color: var(--text-color-emphasis); }
   input[type="submit"] > .button-text,
   button.form-button > .button-text {
-    margin-bottom: 4px; }
+    margin-bottom: 2px; }
   input[type="submit"] > .button-symbol,
   button.form-button > .button-symbol {
     letter-spacing: -7px;
@@ -105,14 +105,12 @@ button.form-button {
     letter-spacing: -7px;
     vertical-align: -1px; }
     .site-header h1 > a .site-name:hover {
-      text-decoration: underline;
-      text-decoration-style: wavy;
       color: var(--text-color-emphasis); }
     .site-header h1 > a .site-logo {
       letter-spacing: -14px;
       margin-right: 15px; }
       .site-header h1 > a .site-logo:hover {
-        color: var(--text-color-primary); }
+        color: var(--text-color-emphasis); }
   .site-header .header-menu-button {
     display: flex;
     color: var(--text-color-emphasis);
@@ -166,10 +164,12 @@ nav.site-nav {
 .list_entry_wrapper .list_entry_inner form {
   display: flex; }
 .list_entry_wrapper .list_entry_inner .new_entry_input {
-  flex: 3; }
+  flex: 3;
+  border-radius: 3px 0px 0px 3px; }
 .list_entry_wrapper .list_entry_inner .new_entry_submit {
   flex: 1;
-  height: 30px; }
+  height: 30px;
+  border-radius: 0px 3px 3px 0px; }
 
 .devel-wrapper .log_screen {
   background-color: var(--site-color-primary);

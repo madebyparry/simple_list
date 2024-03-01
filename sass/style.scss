@@ -100,7 +100,7 @@ button.form-button {
         background-color: $text_color_emphasis;
     }
     > .button-text {
-        margin-bottom: 4px;
+        margin-bottom: 2px;
     }
     > .button-symbol {
         letter-spacing: -7px;
@@ -137,15 +137,15 @@ button.form-button {
         letter-spacing: -7px;
         vertical-align: -1px;
         .site-name:hover {
-            text-decoration: underline;
-            text-decoration-style: wavy;
+            // text-decoration: underline;
+            // text-decoration-style: wavy;
             color: $text_color_emphasis;
         }
         .site-logo {
             letter-spacing: -14px;
             margin-right: 15px;
             &:hover {
-                color: $text_color_primary;
+                color: $text_color_emphasis;
             }
         }    
     }
@@ -227,10 +227,12 @@ nav.site-nav {
         }
         .new_entry_input {
             flex: 3;
+            border-radius: 3px 0px 0px 3px;
         }
         .new_entry_submit {
             flex: 1;
             height: 30px;
+            border-radius: 0px 3px 3px 0px;
         }
     }
 }
