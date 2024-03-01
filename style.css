@@ -25,12 +25,18 @@ body {
     background-color: var(--site-color-primary);
     color: var(--text-color-emphasis); }
 
-nav {
+nav.site-nav {
   display: none;
-  position: absolute;
+  position: relative;
   top: 100px;
   left: 0px;
-  padding: 10px; }
+  padding: 10px 20px;
+  background-color: var(--site-color-secondary); }
+  nav.site-nav ul {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    list-style-type: none; }
 
 #site-nav.reveal {
   display: block; }
