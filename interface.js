@@ -28,5 +28,10 @@ function toggle_menu() {
     let site_nav = document.getElementById('site-nav');
     site_nav.classList.toggle('reveal');
 }
+
+function close_status() {
+    stat = document.getElementById('status-message');
+    stat.classList.add('hidden');
+}
 check_existing();
 // cache_clear();
