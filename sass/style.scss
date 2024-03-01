@@ -132,15 +132,15 @@ button.form-button {
         .current_list_items {
             background-color: #f2ebe9;
             color: $color_primary;
-            padding: 10px 0px;
+            // padding: 10px 0px;
             .list-item {
                 padding: 5px 20px;
                 cursor: pointer;
-                &:hover {
-                    background-color: rgba(240, 80, 31, 0.25);
-                }
                 &:nth-child(2n) {
                     background-color: rgba(10,10,10,0.10);
+                }
+                &:hover {
+                    background-color: rgba(240, 80, 31, 0.25);
                 }
             }
             .checked {

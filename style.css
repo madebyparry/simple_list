@@ -112,15 +112,14 @@ button.form-button {
   font-family: "Silkscreen Regular"; }
   .current_list_wrapper .current_list_inner .current_list_items {
     background-color: #f2ebe9;
-    color: var(--site-color-primary);
-    padding: 10px 0px; }
+    color: var(--site-color-primary); }
     .current_list_wrapper .current_list_inner .current_list_items .list-item {
       padding: 5px 20px;
       cursor: pointer; }
-      .current_list_wrapper .current_list_inner .current_list_items .list-item:hover {
-        background-color: rgba(240, 80, 31, 0.25); }
       .current_list_wrapper .current_list_inner .current_list_items .list-item:nth-child(2n) {
         background-color: rgba(10, 10, 10, 0.1); }
+      .current_list_wrapper .current_list_inner .current_list_items .list-item:hover {
+        background-color: rgba(240, 80, 31, 0.25); }
     .current_list_wrapper .current_list_inner .current_list_items .checked {
       text-decoration: line-through; }
   .current_list_wrapper .current_list_inner input[type="submit"] {
