@@ -42,8 +42,8 @@ body {
     // background-image: linear-gradient(66deg, #888787, #757272);
 }
 .section-wrapper {
-    margin: 10px;
-    border-radius: 10px;
+    margin: 20px;
+    border-radius: 5px;
 }
 
 .site-header {
@@ -169,11 +169,11 @@ button.form-button {
 }
 
 .list_entry_wrapper {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid $color_accent;
+    background-color: $color_secondary;
     .list_entry_inner {
-        margin: 20px;
-        padding: 10px;
-        border: 1px solid $color_accent;
-        background-color: $color_secondary;
         form {
             display: flex;
         }

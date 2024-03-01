@@ -30,8 +30,8 @@ body {
   font-family: "Cotham Sans", Helvetica, sans-serif; }
 
 .section-wrapper {
-  margin: 10px;
-  border-radius: 10px; }
+  margin: 20px;
+  border-radius: 5px; }
 
 .site-header {
   padding: 20px 30px;
@@ -137,7 +137,7 @@ button.form-button {
     margin-top: 10px;
     min-width: 220px; }
 
-.list_entry_wrapper .list_entry_inner {
+.list_entry_wrapper {
   margin: 20px;
   padding: 10px;
   border: 1px solid var(--site-color-accent);
