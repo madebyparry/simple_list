@@ -30,7 +30,7 @@ $devel_enable = TRUE;
                     <?php require_once('./display_list.php'); ?>
                 </div>
                 <button type="submit" value="Clear checked items" class="form-button">
-                    <span class="button-symbol"><?php echo file_get_contents("./assets/icons/simple_list_close.svg"); ?></span>
+                    <span class="button-symbol"><?php echo file_get_contents("assets/icons/simple_list_close.svg"); ?></span>
                     Clear Checked Items
                 </button>
             </form>
@@ -41,7 +41,7 @@ $devel_enable = TRUE;
             <form action="get_list_entry.php" method="post">
                 <input type="text" name="new_list_entry" class="new_entry_input">
                 <button type="submit" value="submit" class="new_entry_submit form-button">
-                    <span class="button-symbol"><?php echo file_get_contents("./assets/icons/simple_list_submit.svg"); ?></span>
+                    <span class="button-symbol"><?php echo file_get_contents("assets/icons/simple_list_submit.svg"); ?></span>
                     Submit
                 </button>
             </form>
