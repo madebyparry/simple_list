@@ -12,7 +12,7 @@ $devel_enable = TRUE;
 </head>
 <body>
     <?php 
-    require_once('./header.php');
+    include_once './header.';
     session_start();
     if (isset($_SESSION['status_message'])): ?>
     <div class="status-message">
