@@ -84,7 +84,7 @@ input {
     border: none;
 }
 input[type="text"] {
-    background-color: mix($color: #fff, $color: $color_secondary, $weight: 0.5);
+    background-color: mix(#fff, #f0be92, 0.5);
     color: #333;
     font-family: $font_primary;
 }
