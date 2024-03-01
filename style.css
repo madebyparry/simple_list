@@ -27,7 +27,7 @@ body {
   background-color: var(--site-color-primary);
   border-color: var(--text-color-secondary);
   color: var(--text-color-secondary);
-  font-family: "Silkscreen Regular"; }
+  font-family: "Cotham Sans", Helvetica, sans-serif; }
 
 svg {
   width: 25px; }
@@ -41,7 +41,8 @@ svg {
   background-color: var(--site-color-secondary); }
 
 a {
-  color: var(--text-color-emphasis); }
+  color: var(--text-color-emphasis);
+  color: var(--text-color-accent); }
 
 input {
   background-color: var(--site-color-primary);
@@ -68,7 +69,8 @@ button.form-button {
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-family: "Silkscreen Regular"; }
   input[type="submit"]:hover,
   button.form-button:hover {
     color: var(--site-color-primary-dark);
@@ -93,6 +95,7 @@ button.form-button {
   justify-content: space-between; }
   .site-header h1 > a {
     font-family: "Silkscreen Bold";
+    color: var(--text-color-accent);
     text-decoration: none;
     font-size: 42px;
     letter-spacing: -7px;
@@ -107,6 +110,7 @@ button.form-button {
   .site-header .header-menu-button {
     display: flex;
     color: var(--text-color-emphasis);
+    color: var(--text-color-accent);
     font-family: "Silkscreen Bold";
     letter-spacing: -2px;
     cursor: pointer; }
