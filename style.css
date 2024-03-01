@@ -28,8 +28,6 @@ body {
 nav.site-nav {
   display: none;
   position: relative;
-  top: 100px;
-  left: 0px;
   padding: 10px 20px;
   background-color: var(--site-color-secondary); }
   nav.site-nav ul {
