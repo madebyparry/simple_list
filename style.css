@@ -218,7 +218,6 @@ nav.site-nav {
   width: 100%;
   height: 100%;
   z-index: -1;
-  filter: blur(20px);
   background-color: #06060b;
   overflow: hidden; }
   .background .blurry-dot {
@@ -249,6 +248,18 @@ nav.site-nav {
       background-color: #65e4d3;
       top: 85%;
       right: 5%; }
+    .background .blurry-dot:nth-child(5) {
+      width: 300px;
+      height: 300px;
+      background-color: #e4e265;
+      top: 5%;
+      right: 5%; }
+    .background .blurry-dot:nth-child(6) {
+      width: 250px;
+      height: 250px;
+      background-color: #65e476;
+      top: 45%;
+      left: 25%; }
 
 @media only screen and (max-width: 660px) {
   .site-header {

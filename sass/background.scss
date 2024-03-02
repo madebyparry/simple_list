@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    filter: blur(20px);
+    // filter: blur(20px);
     background-color: #06060b;
     overflow: hidden;
     .blurry-dot {
@@ -39,6 +39,20 @@
             background-color: #65e4d3;
             top: 85%;
             right: 5%;
+        }
+        &:nth-child(5) {
+            width: 300px;
+            height: 300px;
+            background-color: #e4e265;
+            top: 5%;
+            right: 5%;
+        }
+        &:nth-child(6) {
+            width: 250px;
+            height: 250px;
+            background-color: #65e476;
+            top: 45%;
+            left: 25%;
         }
     }
 }
