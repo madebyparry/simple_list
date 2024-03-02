@@ -4,4 +4,6 @@
     <div class="blurry-dot"></div>
     <div class="blurry-dot"></div>
     <div class="blurry-dot"></div>
+    <div class="blurry-dot"></div>
+    <div class="blurry-dot"></div>
 </div>
