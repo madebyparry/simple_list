@@ -68,6 +68,7 @@ $devel_enable = FALSE;
         </div>
     </div>
     <?php endif; ?>
+    <?php require_once('background.php'); ?>
     <script src="interface.js?v=1"></script>
 </body>
 </html>
