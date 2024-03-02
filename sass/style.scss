@@ -15,7 +15,7 @@
     --text-color-primary: #fff;
     --text-color-secondary: #EEE;
     --text-color-accent: #d58a6d;
-    --text-color-emphasis: #f0501f;
+    --text-color-emphasis: #896dd5;
     
     --site-color-success: #939aaa;
     --text-color-success: #151231;
@@ -164,7 +164,7 @@ button.form-button {
         cursor: pointer;
         &:hover {
             // background-color: $text_color_emphasis;
-            color: $text_color_primary;
+            color: $text_color_emphasis;
         }
         i {
             font-size: 22px;

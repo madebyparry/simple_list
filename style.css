@@ -18,7 +18,7 @@
   --text-color-primary: #fff;
   --text-color-secondary: #EEE;
   --text-color-accent: #d58a6d;
-  --text-color-emphasis: #f0501f;
+  --text-color-emphasis: #896dd5;
   --site-color-success: #939aaa;
   --text-color-success: #151231; }
 
@@ -123,7 +123,7 @@ button.form-button {
     letter-spacing: -2px;
     cursor: pointer; }
     .site-header .header-menu-button:hover {
-      color: var(--text-color-primary); }
+      color: var(--text-color-emphasis); }
     .site-header .header-menu-button i {
       font-size: 22px; }
 
@@ -233,7 +233,7 @@ nav.site-nav {
     .background .blurry-dot:nth-child(2) {
       width: 500px;
       height: 500px;
-      background-color: var(--text-color-emphasis);
+      background-color: #f0501f;
       top: 35%;
       left: 55%; }
     .background .blurry-dot:nth-child(3) {
