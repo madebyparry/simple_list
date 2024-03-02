@@ -133,7 +133,10 @@ nav.site-nav {
   display: none;
   position: relative;
   padding: 5px 40px;
-  background-color: var(--site-color-secondary); }
+  background-color: var(--site-color-secondary);
+  font-family: "Silkscreen Regular"; }
+  nav.site-nav a {
+    text-decoration: none; }
   nav.site-nav ul {
     display: flex;
     padding: 0px;
