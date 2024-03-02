@@ -166,6 +166,9 @@ button.form-button {
             // background-color: $text_color_emphasis;
             color: $text_color_emphasis;
         }
+        svg {
+            width: 18px;
+        }
         i {
             font-size: 22px;
         }
@@ -281,6 +284,9 @@ nav.site-nav {
     border-radius: 0px 0px 5px 5px;
     .emphasis {
         color: $text_color_primary;
+    }
+    svg {
+        width: 15px;
     }
     .close:hover {
         color: $text_color_primary;

@@ -124,6 +124,8 @@ button.form-button {
     cursor: pointer; }
     .site-header .header-menu-button:hover {
       color: var(--text-color-emphasis); }
+    .site-header .header-menu-button svg {
+      width: 18px; }
     .site-header .header-menu-button i {
       font-size: 22px; }
 
@@ -207,6 +209,8 @@ nav.site-nav {
   border-radius: 0px 0px 5px 5px; }
   .status-message .emphasis {
     color: var(--text-color-primary); }
+  .status-message svg {
+    width: 15px; }
   .status-message .close:hover {
     color: var(--text-color-primary);
     cursor: pointer; }
