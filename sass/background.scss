@@ -6,23 +6,24 @@
     height: 100%;
     z-index: -1;
     filter: blur(20px);
-    background-color: rgb(9, 9, 36);
+    background-color: #06060b;
+    overflow: hidden;
     .blurry-dot {
         position: absolute;
         border-radius: 50%;
-        filter: blur(30px) opacity(0.1);
+        filter: blur(30px) opacity(0.05);
         &:nth-child(1) {
             width: 100px;
             height: 100px;
-            background-color: $text_color_accent;
-            top: 25%;
-            left: 5%;
+            background-color: var(--text-color-accent);
+            top: 55%;
+            left: 25%;
         }
         &:nth-child(2) {
             width: 500px;
             height: 500px;
-            background-color: $text_color_emphasis;
-            top: 66%;
+            background-color: var(--text-color-emphasis);
+            top: 35%;
             left: 55%;
         }
         &:nth-child(3) {
@@ -36,7 +37,7 @@
             width: 200px;
             height: 200px;
             background-color: #65e4d3;
-            top: 5%;
+            top: 85%;
             right: 5%;
         }
     }
