@@ -13,7 +13,7 @@
 :root {
   --site-color-primary: #131c26;
   --site-color-primary-dark: #06090d;
-  --site-color-secondary: rgb(12, 13, 19, 0.7);
+  --site-color-secondary: rgb(2, 3, 9, 0.4);
   --site-color-accent: #424242;
   --text-color-primary: #fff;
   --text-color-secondary: #EEE;
@@ -258,7 +258,7 @@ nav.site-nav {
       width: 250px;
       height: 250px;
       background-color: #65e476;
-      top: 45%;
+      top: 25%;
       left: 25%; }
 
 @media only screen and (max-width: 660px) {
