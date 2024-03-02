@@ -13,7 +13,7 @@
 :root {
   --site-color-primary: #131c26;
   --site-color-primary-dark: #06090d;
-  --site-color-secondary: #0c0d13;
+  --site-color-secondary: rgb(12, 13, 19, 0.7);
   --site-color-accent: #424242;
   --text-color-primary: #fff;
   --text-color-secondary: #EEE;
