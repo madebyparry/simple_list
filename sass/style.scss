@@ -182,6 +182,9 @@ nav.site-nav {
     font-family: $font_primary;
     a {
         text-decoration: none;
+        &:hover {
+            color: $text_color_emphasis;
+        }
     }
     ul {
         display: flex;
