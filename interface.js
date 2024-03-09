@@ -18,6 +18,28 @@ function check_existing() {
         }
     }   
 }
+
+function(){
+	var checked_cache = $('input[type=checkbox]:checked').map(function(){
+        return this.value;
+    }).get();
+    localStorage['checked_items_cache']=JSON.stringify(checked_cache);
+}
+function(){
+    if(localStorage&&localStorage["checked_items_cache"]){
+        var localStoredData=JSON.parse(localStorage["checked_items_cache"]);
+        var checkboxes=document.getElementsByClassName('list_item_checkbox');
+        for(var i=0;i<checkboxes.length;i++){
+            for(var j=0;j<localStoredData.length;j++){
+                if(checkboxes[i].value==localStoredData[j]){
+                    checkboxes[i].checked=true;
+                }
+            }
+        }
+        localStorage.removeItem('checked_items_cache');
+    }
+}
+
 function cache_clear() {
     console.log('js caches cleared');
     caches.delete();
