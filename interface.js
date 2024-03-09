@@ -19,13 +19,13 @@ function check_existing() {
     }   
 }
 
-function(){
+function checks_to_local_storage(){
 	var checked_cache = $('input[type=checkbox]:checked').map(function(){
         return this.value;
     }).get();
     localStorage['checked_items_cache']=JSON.stringify(checked_cache);
 }
-function(){
+function checks_from_local_storage(){
     if(localStorage&&localStorage["checked_items_cache"]){
         var localStoredData=JSON.parse(localStorage["checked_items_cache"]);
         var checkboxes=document.getElementsByClassName('list_item_checkbox');
@@ -56,5 +56,24 @@ function close_status() {
     stat = document.getElementById('status-message');
     stat.classList.add('hidden');
 }
-check_existing();
-// cache_clear();
+
+
+switch (document.readyState) {
+  case "loading":
+    console.log('readystate - loading'); 
+    break;
+  case "interactive": {
+    console.log('readystate - interactive'); 
+    break;
+  }
+  case "complete":
+    console.log('readystate - complete'); 
+    console.log(
+      `The first CSS rule is: ${document.styleSheets[0].cssRules[0].cssText}`,
+    );
+    check_existing();
+    checks_to_local_storage();
+    checks_from_local_storage();
+    break;
+}
+
