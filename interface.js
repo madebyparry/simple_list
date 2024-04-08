@@ -77,3 +77,6 @@ switch (document.readyState) {
     break;
 }
 
+window.onload = "check_existing()";
+window.onload = "check_from_local_storage()";
+window.onload = "check_to_local_storage()";
